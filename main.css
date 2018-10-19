@@ -242,7 +242,7 @@ header {
 .pImg a img {
 	margin: 2%;
 	width: 40%;
-	margin-left: 300px;
+	margin-left: 100px;
 	position: relative;
 	z-index: 1;
 	box-shadow: 0 2px 100px black;
@@ -251,7 +251,7 @@ header {
 .pImg p {
 	line-height: 30px;
 	margin: 0px;
-	margin-right: 300px;
+	margin-right: 0px;
 	padding: 25px;
  	float: right;
 }
@@ -318,7 +318,8 @@ footer p {
 		text-align: right;
 		height: 70px;
 		line-height: 70px;
-		position: static;
+		position: relative;
+		width: 100%
 	}
 
 	.menu {
@@ -331,12 +332,13 @@ footer p {
 		display: block;
 		border-bottom: 1px solid #EAEAEB;
 		margin: 0;
+		z-index: 100;
+		background-color: #EAEAEB;
 	}
 
 	.menu a:hover {
-		background-color: #000;
+		background-color: #FFF;
 		opacity: .7;
-
 	}
 
 	#toggle:checked + .menu {
@@ -353,7 +355,7 @@ footer p {
 
 @media only screen and (max-width: 850px) {
 	header {
-		
+
 	}
 
 	header img {
