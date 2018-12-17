@@ -77,12 +77,8 @@ li {
 	line-height: 70px;
 }
 
-.menu a {
-	clear: right;
-	text-decoration: none;
-	color: gray;
-	margin: 0 10px;
-	line-height: 70px;
+.menu a:hover {
+	background-color: red;
 }
 
 span {
@@ -137,6 +133,10 @@ header {
 
 .headerText {
 	width: 100%;
+}
+
+.pImg mark {
+	text-align: left;
 }
 
 .pImg a img {
@@ -290,7 +290,7 @@ footer p {
 @media only screen and (min-width: 1760px) {
 
 	#footerB {
-		margin-top: 30%;
+		margin-top: 22%;
 	}
 
 	#footerP {
@@ -298,30 +298,23 @@ footer p {
 	}
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1760px) {
 
-	.pImg a img {
-		margin: 2%;
-		width: 96%;
-		margin-left: 0px;
-		margin-top: 0px;
-		position: relative;
-		z-index: 1;
-		box-shadow: 0 2px 100px black;
+	#footerB {
+		margin-top: 20%;
 	}
+
+}
+
+@media only screen and (max-width: 1500px) {
 
 	.pImg p {
 		margin-right: 0px;
 	}
 
-	
 }
 
 @media only screen and (max-width: 991px) {
-
-	header p {
-		width: 100%;
-	}
 
 	.pImg a img {
 		margin: 2%;
@@ -374,8 +367,8 @@ footer p {
 }
 
 @media only screen and (max-width: 850px) {
-	header {
-
+	.hTitle {
+		display: none;
 	}
 
 	header img {
