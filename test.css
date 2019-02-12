@@ -6,7 +6,6 @@
 	outline: 0;
 	font-size: 100%;
 	vertical-align: baseline;
-	overflow: hidden !important;
 }
 
 html {
@@ -24,7 +23,6 @@ body {
 .wapper {
 	width: 90%;
 	margin: 0 auto;
-	float: left;
 }
 
 .clearfix::after {
@@ -79,12 +77,8 @@ li {
 	line-height: 70px;
 }
 
-.menu a {
-	clear: right;
-	text-decoration: none;
-	color: gray;
-	margin: 0 10px;
-	line-height: 70px;
+.menu a:hover {
+	background-color: red;
 }
 
 span {
@@ -141,6 +135,10 @@ header {
 	width: 100%;
 }
 
+.pImg mark {
+	text-align: left;
+}
+
 .pImg a img {
 	margin: 2%;
 	width: 40%;
@@ -148,6 +146,10 @@ header {
 	position: relative;
 	z-index: 1;
 	box-shadow: 0 2px 100px black;
+}
+
+.pImg a img:hover {
+	box-shadow: 0 2px 100px #8b0000;
 }
 
 .pImg p {
@@ -244,7 +246,7 @@ header {
 .pImg a img {
 	margin: 2%;
 	width: 40%;
-	margin-left: 300px;
+	margin-left: 100px;
 	position: relative;
 	z-index: 1;
 	box-shadow: 0 2px 100px black;
@@ -253,7 +255,7 @@ header {
 .pImg p {
 	line-height: 30px;
 	margin: 0px;
-	margin-right: 300px;
+	margin-right: 0px;
 	padding: 25px;
  	float: right;
 }
@@ -262,12 +264,15 @@ header {
 	color: white;
 	background: none;
 	font-style: italic;
+	text-decoration: underline;
+	opacity: 100%;
 }
 
 .text {
 	box-shadow: 0 2px 100px black;
 	color: white;
 	background: none;
+	font-size: 125%;
 }
 
 /*footer*/
@@ -282,28 +287,34 @@ footer p {
 }
 
 /*Responsive*/
-@media only screen and (max-width: 1500px) {
+@media only screen and (min-width: 1760px) {
 
-	.pImg a img {
-		margin: 2%;
-		width: 96%;
-		margin-left: 0px;
-		margin-top: 0px;
-		position: relative;
-		z-index: 1;
-		box-shadow: 0 2px 100px black;
+	#footerB {
+		margin-top: 22%;
 	}
+
+	#footerP {
+		margin-top: 45%;
+	}
+}
+
+@media only screen and (max-width: 1760px) {
+
+	#footerB {
+		margin-top: 20%;
+	}
+
+}
+
+@media only screen and (max-width: 1500px) {
 
 	.pImg p {
 		margin-right: 0px;
 	}
+
 }
 
 @media only screen and (max-width: 991px) {
-
-	header p {
-		width: 100%;
-	}
 
 	.pImg a img {
 		margin: 2%;
@@ -320,7 +331,8 @@ footer p {
 		text-align: right;
 		height: 70px;
 		line-height: 70px;
-		position: static;
+		position: relative;
+		width: 100%
 	}
 
 	.menu {
@@ -333,12 +345,13 @@ footer p {
 		display: block;
 		border-bottom: 1px solid #EAEAEB;
 		margin: 0;
+		z-index: 100;
+		background-color: #EAEAEB;
 	}
 
 	.menu a:hover {
-		background-color: #000;
+		background-color: #FFF;
 		opacity: .7;
-
 	}
 
 	#toggle:checked + .menu {
@@ -354,8 +367,8 @@ footer p {
 }
 
 @media only screen and (max-width: 850px) {
-	header {
-
+	.hTitle {
+		display: none;
 	}
 
 	header img {
@@ -391,7 +404,7 @@ footer p {
 	.Bio {
 		text-align: left;
 		width: 96%;
-		margin: 100px 0 0px 0;
+		margin: 0px auto 0px auto;
 	}
 
 	.hTitle {
