@@ -10,6 +10,7 @@
 
 html {
 	font-family: proxima nova, sans-serif; /*Temporary*/
+	overflow-x: hidden;
 }
 
 body {
