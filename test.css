@@ -261,6 +261,10 @@ header {
  	float: right;
 }
 
+.pImg p mark {
+	font-size: 15px;
+}
+
 .title {
 	color: white;
 	background: none;
