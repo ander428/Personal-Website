@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/icons": "latest",
+    "@trendmicro/react-sidenav": "^0.4.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-metismenu": "^1.4.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {
@@ -23,6 +26,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "tslint": "^5.16.0"
+    "@material-ui/core": "^3.9.3",
+    "react-router-dom": "latest",
+    "react-router": "latest",
+    "reactstrap": "latest",
+    "classnames": "latest"
   }
 }
