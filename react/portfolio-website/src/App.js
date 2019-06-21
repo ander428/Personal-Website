@@ -10,27 +10,31 @@ import {
 } from "react-router-dom";
 import HomePage from "./containers/Home/HomePage";
 import PortfolioPage from "./containers/Portfolio/PortfolioPage";
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import { defaultTheme } from "./utils/Themes/Default";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <Router>
-            <div>
-              <SideNavbar />
+        <MuiThemeProvider theme={defaultTheme}>
+          <header className="App-header">
+            <Router>
+              <div>
+                <SideNavbar />
 
-              <Switch>
-                <Route exact path="/" component={withRouter(HomePage)} />
-                <Route
-                  path="/portfolio"
-                  component={withRouter(PortfolioPage)}
-                />
-                <Route path="/contact" component={withRouter(ContactPage)} />
-              </Switch>
-            </div>
-          </Router>
-        </header>
+                <Switch>
+                  <Route exact path="/" component={withRouter(HomePage)} />
+                  <Route
+                    path="/portfolio"
+                    component={withRouter(PortfolioPage)}
+                  />
+                  <Route path="/contact" component={withRouter(ContactPage)} />
+                </Switch>
+              </div>
+            </Router>
+          </header>
+        </MuiThemeProvider>
       </div>
     );
   }

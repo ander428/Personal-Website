@@ -26,16 +26,19 @@ export const constants = {
   ],
   CONTACT: [
     {
+      id: "a",
       title: "Email",
       link: "ander428@mail.chapman.edu",
       icon: ""
     },
     {
+      id: "b",
       title: "Github",
       link: "github.com/ander428",
       icon: ""
     },
     {
+      id: "c",
       title: "LinkedIn",
       link: "linkedin.com/ander428",
       icon: ""
@@ -45,8 +48,7 @@ export const constants = {
     PERSONAL: [
       {
         name: "True Vine",
-        image: "src/resources/testimage.jpg",
-        // image: url + "/images/portfolio/truevine.png",
+        image: "/imgs/testImg.jpg",
         link: "https://github.com/madden-man/TrueVine-Android",
         featured: true,
         description:
@@ -56,9 +58,7 @@ export const constants = {
       },
       {
         name: "APA Formatter",
-        image: "src/resources/testimage.jpg",
-
-        // image: url + "/images/portfolio/APA.png",
+        image: "/imgs/testImg.jpg",
         link: "https://github.com/ander428/APA-Formatter",
         description:
           "APA Formatter is a desktop application similar to EasyBib.com that takes in information from a source and returns the bibliography " +
@@ -69,9 +69,8 @@ export const constants = {
     SCHOOL: [
       {
         name: "Denver Crime",
-        image: "/src/resources/testimage.jpg",
+        image: "/imgs/testImg.jpg",
 
-        // image: url + "/images/portfolio/DensityMap.png",
         link: "https://github.com/ander428/Denver-Crime",
         featured: true,
         description:
@@ -81,8 +80,8 @@ export const constants = {
       },
       {
         name: "Prison Break",
+        image: "/imgs/testImg.jpg",
 
-        // image: url + "/images/portfolio/prisonbreak.png",
         link: url + "/resources/PB_GDD.pdf",
         description:
           "Prison Break is a 2.5D, 3D designed Action Side-Scroller in which the player is attempting to break out of the Max Security Prison " +

@@ -10,7 +10,7 @@ const ContactPage = props => {
     <div>
       <h1 className={classes.title}>Contact Me</h1>
       {constants.CONTACT.map(contact => (
-        <div>
+        <div key={contact.id}>
           <i className={contact.icon} />
           <Typography>{contact.title}</Typography>
           <Typography>{contact.link}</Typography>
