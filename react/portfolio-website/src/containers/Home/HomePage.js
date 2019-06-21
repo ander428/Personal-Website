@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./HomePage.styles.js";
 import { withStyles } from "@material-ui/core";
-import { defaultTheme } from "../../utils/Themes/Default";
 
 const HomePage = props => {
   const { classes } = props;
@@ -13,4 +12,4 @@ const HomePage = props => {
   );
 };
 
-export default withStyles(styles(defaultTheme))(HomePage);
+export default withStyles(styles)(HomePage);

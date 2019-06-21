@@ -3,17 +3,15 @@ import { withStyles } from "@material-ui/core/styles/index";
 import classNames from "classnames";
 import "@trendmicro/react-sidenav/dist/react-sidenav.css";
 import {
-  AppBar,
   CssBaseline,
   Divider,
   Drawer,
   IconButton,
-  Toolbar,
   Typography
 } from "@material-ui/core";
 import styles from "./SideNav.styles";
 import { constants } from "../../utils/constants";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class SideNav extends Component {
   constructor(props) {
