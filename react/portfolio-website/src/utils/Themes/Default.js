@@ -13,5 +13,8 @@ export const defaultTheme = createMuiTheme({
   },
   spacing: {
     unit: 3
+  },
+  typography: {
+    useNextVariants: true
   }
 });

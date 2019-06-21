@@ -13,6 +13,7 @@ import {
 } from "@material-ui/core";
 import styles from "./SideNav.styles";
 import { constants } from "../../utils/constants";
+import { Link, NavLink } from "react-router-dom";
 
 class SideNav extends Component {
   constructor(props) {
@@ -53,11 +54,13 @@ class SideNav extends Component {
           open={this.state.open}
         >
           {constants.MENU.map(tab => (
-            <div>
-              <IconButton>
-                {constants.ICONS.info}
-                <Typography>{tab.title}</Typography>
-              </IconButton>
+            <div key={tab.id}>
+              <Link to={tab.url}>
+                <IconButton>
+                  {constants.ICONS.info}
+                  <Typography>{tab.title}</Typography>
+                </IconButton>
+              </Link>
               <Divider />
             </div>
           ))}

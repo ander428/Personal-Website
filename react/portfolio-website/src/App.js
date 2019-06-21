@@ -1,17 +1,35 @@
 import React, { Component } from "react";
 import "./App.css";
-import HomePage from "./containers/Home/HomePage";
 import SideNavbar from "./components/SideNav/SideNav";
+import ContactPage from "./containers/Contact/ContactPage";
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+  withRouter
+} from "react-router-dom";
+import HomePage from "./containers/Home/HomePage";
 import PortfolioPage from "./containers/Portfolio/PortfolioPage";
-import SocialMediaPage from "./containers/SocialMedia/SocialMediaPage";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <SideNavbar />
-          <SocialMediaPage />
+          <Router>
+            <div>
+              <SideNavbar />
+
+              <Switch>
+                <Route exact path="/" component={withRouter(HomePage)} />
+                <Route
+                  path="/portfolio"
+                  component={withRouter(PortfolioPage)}
+                />
+                <Route path="/contact" component={withRouter(ContactPage)} />
+              </Switch>
+            </div>
+          </Router>
         </header>
       </div>
     );

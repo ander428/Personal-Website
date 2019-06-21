@@ -1,6 +1,4 @@
 import React from "react";
-import { withStyles } from "@material-ui/core";
-import { defaultTheme } from "../../utils/Themes/Default";
 import Gallery from "../../components/Gallery";
 import { constants } from "../../utils/constants";
 
