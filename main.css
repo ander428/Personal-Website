@@ -78,7 +78,7 @@ li {
 }
 
 .menu a:hover {
-	background-color: red;
+
 }
 
 span {
@@ -161,6 +161,7 @@ header {
 }
 
 /*skills*/
+
 .skills {
 	text-align: center;
 	margin: 150px 0 250px 0;
@@ -185,18 +186,57 @@ header {
 	z-index: -1;
 }
 
-.sImg {
+.skillsList {
+	box-shadow: 0 2px 100px black;
+	margin: 0px;
 	text-align: center;
-	width: 100%;
-	box-shadow: 0 2px 100px;
+	padding: 30vh;
+	color: white;
+	font-size: 36px;
+	font-weight: 800;
+	overflow: hidden;
+	animation: bg 5s linear infinite
 }
 
-.sImg img {
-	margin: 2.75%;
-	margin-top: -1%;
-	width: 40%;
-	position: relative;
-	z-index: -1;
+.dropping-list {
+	display: inline-block;
+	width: 180px;
+	text-align: left;
+	height: 36px;
+	vertical-align: -2px;
+}
+
+.dropping-list > div {
+	font-size: 0px;
+	opacity: 0;
+	margin-left: -30px;
+	position: absolute;
+
+}
+
+@keyframes roll {
+	0% {
+		height: inherit;
+		width: inherit;
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	45% {
+		opacity: 1;
+		transform: translateX(125px);
+	}
+
+	90% {
+		height: inherit;
+		width: inherit;
+		opacity: 0;
+		transform: translateX(500px);
+	}
 }
 
 /*Portfolio*/

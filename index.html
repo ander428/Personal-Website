@@ -3,8 +3,55 @@
 <head>
 	<title>Portfolio</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scal=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<!--Javascript-->
+<script>
+	function toPath(path) {
+			var win = window.open(path, "_blank");
+			win.focus();
+	}
+
+	function rotateSkills() {
+		console.log("Animation Started");
+		var skills = document.getElementById('listRef');
+		for(let i = 0; i < skills.childElementCount; ++i) {
+			var div = skills.children[i];
+
+			switch(i) {
+				case 0:
+					div.style.marginTop = "150px";
+					break;
+				case 4:
+					div.style.marginTop = "0px";
+					break;
+				case 5:
+					div.style.marginTop = "-20px";
+					div.style.marginLeft = "-150px";
+					break;
+				case 6:
+					div.style.marginTop = "150px";
+					break;
+				case 7:
+					div.style.marginTop = "-175px";
+					break;
+				case 8:
+					div.style.marginTop = "0px";
+					div.style.marginLeft = "-150px";
+					break;
+				default:
+					if(i % 2) div.style.marginTop = "-200px";
+					else if(i % 3) div.style.marginTop = "200px";
+					break;
+			}
+
+			div.style.animation = "roll 13.5s linear infinite " + i*1.5 +"s";
+		}
+	}
+
+
+	window.onload = rotateSkills;
+</script>
 </head>
 
 <body>
@@ -35,7 +82,7 @@
 
 		<div class="pImg">
 			<h3>Joshua W. Anderson</h3>
-			<a href="https://www.linkedin.com/in/ander428/"><img src="images/profile.jpg" style="width:20%;height:20%; margin-top: -30px;" align="left" alt="project image"></a>
+			<a href="resources/resume.pdf"><img src="images/profile.jpg" style="width:20%;height:20%; margin-top: -30px;" align="left" alt="project image"></a>
 			<mark class="title" style="text-decoration: underline;">About Me</mark><br><br><mark class="text"> Hello World! My name is Joshua Anderson.<br><br>I am a junior at Chapman University studying a B.S. in Computer Science.<br><br>I have always wanted to make an impact in the world, and it is a goal of mine to not just do that in my everyday life, but also using my skills in software engineering to do just that!<br><br>I am always trying to challenge myself and find more opportunities. If you would like to contact me concerning a project or employent, feel free to email me at ander428@mail.chapman.edu.</mark>
 
 			<h3 id="footerB" style="font-size: 30px;">Chapman Class of 2020</h3>
@@ -48,22 +95,22 @@
 			<h2 class="sTitle">Skills</h2>
 		</div>
 
-		<div class="sImg">
-
-			<img src="images/skills/csharp.png" style="width:9%;height:9%;margin-top: 30px;" alt="project image">
-			<img src="images/skills/python.png" style="width:10%;height:10%;" alt="project image">
-			<img src="images/skills/android-studio.png" style="width:20%;height:20%;" alt="project image">
-			<br>
-			<img src="images/skills/java.png" style="width:20%;height:20%;" alt="project image">
-			<img src="images/skills/linux.png" style="width:12.5%;height:12.5%;margin-bottom: 50px" alt="project image">
-			<br>
-			<img src="images/skills/c++.png" style="width:11%;height:11%; margin-bottom: 10px;" alt="project image">
-			<img src="images/skills/swift.png" style="width:10%;height:10%; margin-bottom: 100px;" alt="project image">
-			<img src="images/skills/sql.png" style="width:15%;height:15%;margin-bottom: 100px" alt="project image">
-			<br>
-			<img src="images/skills/unity.png" style="width:10%;height:10%;margin-bottom: 75px" alt="project image">
-			<img src="images/skills/unreal.jpg" style="width:10%;height:10%;margin-bottom: 10px" alt="project image">
+		<div class="skillsList">
+			<div class="dropping-list" id="listRef">
+				<div><img src="images/skills/csharp.png" style="width:150px;height:165px;" alt="project image"></div>
+				<div><img src="images/skills/python.png" alt="project image"></div>
+				<div><img src="images/skills/android-studio.png" style="margin-left: -200px;" alt="project image"></div>
+				<div><img src="images/skills/java.png" style="margin-left: -200px;" alt="project image"></div>
+				<div><img src="images/skills/linux.png" style="width: 325px; height: 175px;" alt="project image"></div>
+				<div><img src="images/skills/c++.png" style="width:150px;height:175px;" alt="project image"></div>
+				<div><img src="images/skills/sql.png" style="width: 150px; height: 140px;" alt="project image"></div>
+				<div><img src="images/skills/unity.png" style="width: 250px; height: 100px;" alt="project image"></div>
+				<div><img src="images/skills/unreal.jpg" style="width: 150px; height: 165;" alt="project image"></div>
+			</div>
 		</div>
+
+
+
 
 		<div class="portfolio" id="pRef">
 			<h2 class="pTitle">Portfolio</h2>
@@ -102,34 +149,6 @@
 	</div>
 
 
-		<!--Javascript-->
-	<script>
-		function toPath(path) {
-		    var win = window.open(path, "_blank");
-		    win.focus();
-		}
 
-		//smooth
-		$(document).ready(function(){
-		  		// Add smooth scrolling to all links
-		  		$("a").on('click', function(event) {
-			    	// Make sure this.hash has a value before overriding default behavior
-			   		if (this.hash !== "") {
-				      	event.preventDefault();
-
-				    	// Store hash
-				      	var hash = this.hash;
-
-				      	$('html, body').animate({
-				        	scrollTop: $(hash).offset().top
-				      	}, 800, function(){
-
-				        	// Add hash (#) to URL when done scrolling (default click behavior)
-				        	window.location.hash = hash;
-			      	});
-			    }
-			});
-		});
-	</script>
 </body>
 </html>
