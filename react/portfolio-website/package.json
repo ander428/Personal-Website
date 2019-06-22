@@ -5,11 +5,11 @@
   "dependencies": {
     "@material-ui/icons": "latest",
     "@trendmicro/react-sidenav": "^0.4.5",
+    "history": "latest",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-metismenu": "^1.4.0",
-    "react-scripts": "2.1.8",
-    "history": "latest"
+    "react-scripts": "^2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",

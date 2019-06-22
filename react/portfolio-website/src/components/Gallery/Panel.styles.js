@@ -13,7 +13,10 @@ const styles = theme => ({
     display: "table",
     tableLayout: "fixed",
     margin: 0,
-    padding: 0
+    padding: 0,
+    '&:hover':{
+      width: "10%"
+    }
   },
   link: {
     display: "block",
@@ -35,8 +38,11 @@ const styles = theme => ({
     position: "relative",
     width: "16.66%",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    transition: theme.transition.default
+    backgroundPosition: "center center",
+    transition: theme.transition.default,
+    '&:hover':{
+      width: "60%"
+    }
   },
   title: {
     backgroundColor: colors.BLACK,
