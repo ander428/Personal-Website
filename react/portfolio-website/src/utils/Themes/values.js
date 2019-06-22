@@ -4,3 +4,7 @@ export const settings = {
   transition: "0.05s ease-in-out",
   transitionDelay: "1s"
 };
+
+export const colors = {
+  BLACK: "#000"
+};

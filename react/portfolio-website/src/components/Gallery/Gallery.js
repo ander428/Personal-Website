@@ -1,18 +1,7 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
 import Panel from "./Panel";
-
-const styles = {
-  root: {
-    boxShadow: "5px 10px 18px #888888"
-  },
-  panels: {
-    minHeight: "50vh",
-    minWidth: "100vw",
-    overflow: "hidden",
-    display: "flex"
-  }
-};
+import styles from "./Gallery.styles";
 
 class Gallery extends Component {
   constructor(props) {
@@ -27,9 +16,11 @@ class Gallery extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.panels}>
+        {/*<ul className={classes.list}>*/}
         {this.state.data.map((item, i) => (
-          <Panel img={item.image} key={i} />
+          <Panel {...item} key={i} />
         ))}
+        {/*</ul>*/}
       </div>
     );
   }
