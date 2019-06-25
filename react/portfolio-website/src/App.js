@@ -1,17 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
 import SideNavbar from "./components/SideNav/SideNav";
-import ContactPage from "./containers/Contact/ContactPage";
-import {
-  HashRouter as Router,
-  Route,
-  Switch,
-  withRouter
-} from "react-router-dom";
-import HomePage from "./containers/Home/HomePage";
-import PortfolioPage from "./containers/Portfolio/PortfolioPage";
+import { BrowserRouter as Router } from "react-router-dom";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import { defaultTheme } from "./utils/Themes/Default";
+import Routes from "./components/Routes/Routes";
 
 class App extends Component {
   render() {
@@ -22,15 +15,7 @@ class App extends Component {
             <Router>
               <div>
                 <SideNavbar />
-
-                <Switch>
-                  <Route exact path="/" component={withRouter(HomePage)} />
-                  <Route
-                    path="/portfolio"
-                    component={withRouter(PortfolioPage)}
-                  />
-                  <Route path="/contact" component={withRouter(ContactPage)} />
-                </Switch>
+                <Routes />
               </div>
             </Router>
           </header>

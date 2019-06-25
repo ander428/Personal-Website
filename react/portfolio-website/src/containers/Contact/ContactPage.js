@@ -7,7 +7,7 @@ import { constants } from "../../utils/constants";
 const ContactPage = props => {
   const { classes } = props;
   return (
-    <div>
+    <div className={"page"}>
       <h1 className={classes.title}>Contact Me</h1>
       {constants.CONTACT.map(contact => (
         <div key={contact.id}>

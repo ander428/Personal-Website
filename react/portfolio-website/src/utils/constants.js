@@ -46,7 +46,6 @@ export const constants = {
   ],
   PORTFOLIO: {
     PERSONAL: [
-
       {
         name: "APA Formatter",
         image: "/imgs/portfolio/APA.png",
@@ -62,10 +61,10 @@ export const constants = {
         link: "https://github.com/madden-man/TrueVine-Android",
         featured: true,
         description:
-            "TrueVine is an app designed to help members of collegiate organizations communicate! By combiningthe messaging functionality of " +
-            "Rocket Chat with a calendar (and Google Calendar integration), students can more effectively plan events and talk to each other about plans" +
-            " for the club as a whole. I parntered with a small team of people on this project with the goal of solving communication issues in our clubs on campus!"
-      },
+          "TrueVine is an app designed to help members of collegiate organizations communicate! By combiningthe messaging functionality of " +
+          "Rocket Chat with a calendar (and Google Calendar integration), students can more effectively plan events and talk to each other about plans" +
+          " for the club as a whole. I parntered with a small team of people on this project with the goal of solving communication issues in our clubs on campus!"
+      }
     ],
     SCHOOL: [
       {
@@ -84,9 +83,9 @@ export const constants = {
         link: "https://github.com/ander428/Denver-Crime",
         featured: true,
         description:
-            "This project used three machine learning algorithms, Hierarchical Agglomerative Clustering, DBSCAN, and a first order Markov model. " +
-            "I was mainly responsible for implementing the Markov model and graphing data on a map. The model uses all 400,000 data points with the most previous crime " +
-            "as a reference point to predict the next crime in a given neighborhood in the city of Denver."
+          "This project used three machine learning algorithms, Hierarchical Agglomerative Clustering, DBSCAN, and a first order Markov model. " +
+          "I was mainly responsible for implementing the Markov model and graphing data on a map. The model uses all 400,000 data points with the most previous crime " +
+          "as a reference point to predict the next crime in a given neighborhood in the city of Denver."
       },
       {
         name: "Prison Break",
