@@ -1,6 +1,6 @@
 import React from "react";
 
-const url = "joshuawanderson.com";
+const url = "www.joshuawanderson.com";
 
 export const constants = {
   URL: url,
@@ -8,19 +8,21 @@ export const constants = {
     {
       id: "6dTjQLmaE2AprxRl",
       title: "Home",
-      icon: "fas fa-info-circle",
       url: "/"
     },
     {
       id: "4JqBPKKRNbDHCvpc",
       title: "Portfolio",
-      icon: "fas fa-info-circle",
       url: "/portfolio"
+    },
+    {
+      id: "kF68xSAsUo5pjgU5",
+      title: "Resume",
+      url: "/resources/Resume.pdf"
     },
     {
       id: "kE28xSEsUo5pjgUl",
       title: "Contact",
-      icon: "fas fa-info-circle",
       url: "/contact"
     }
   ],
@@ -59,7 +61,6 @@ export const constants = {
         name: "True Vine",
         image: "/imgs/portfolio/truevine1.png",
         link: "https://github.com/madden-man/TrueVine-Android",
-        featured: true,
         description:
           "TrueVine is an app designed to help members of collegiate organizations communicate! By combiningthe messaging functionality of " +
           "Rocket Chat with a calendar (and Google Calendar integration), students can more effectively plan events and talk to each other about plans" +
@@ -71,21 +72,19 @@ export const constants = {
         name: "Denver Crime",
         image: "/imgs/portfolio/DensityMap.png",
         link: "https://github.com/ander428/Denver-Crime",
-        featured: true,
         description:
           "This project used three machine learning algorithms, Hierarchical Agglomerative Clustering, DBSCAN, and a first order Markov model. " +
           "I was mainly responsible for implementing the Markov model and graphing data on a map. The model uses all 400,000 data points with the most previous crime " +
           "as a reference point to predict the next crime in a given neighborhood in the city of Denver."
       },
       {
-        name: "Denver Crime",
+        name: "Financial Manager",
         image: "/imgs/portfolio/DBFinal1.png",
-        link: "https://github.com/ander428/Denver-Crime",
-        featured: true,
+        link: "https://github.com/karlhickel/Database-Final-Project",
         description:
-          "This project used three machine learning algorithms, Hierarchical Agglomerative Clustering, DBSCAN, and a first order Markov model. " +
-          "I was mainly responsible for implementing the Markov model and graphing data on a map. The model uses all 400,000 data points with the most previous crime " +
-          "as a reference point to predict the next crime in a given neighborhood in the city of Denver."
+          "This project is a website built using Django. It is a database of financial information in a table of transactions records and analytics " +
+          "showing useful visualizations using Google's visualizations API. Using MySQL as a backend, this project connected to a Google Cloud account " +
+          "provided by Chapman to store the database and performs a list of required queries (listed on the README)."
       },
       {
         name: "Prison Break",

@@ -13,12 +13,12 @@ const styles = {
   },
   titles: {
     height: "40vh",
-    paddingLeft: "10%"
+    paddingLeft: "10vw"
   },
   grid: {
     marginLeft: "auto",
     marginRight: "auto",
-    paddingTop: 50
+    paddingTop: "5vh"
   }
 };
 
@@ -26,14 +26,14 @@ const PortfolioPage = props => {
   const { classes } = props;
   return (
     <div className={"page"}>
-      <Grid container spacing={6} className={classes.grid}>
-        <Grid item xs={2} className={classes.titles}>
+      <Grid container spacing={8} className={classes.grid}>
+        <Grid item xs={0} className={classes.titles}>
           <h2 className={classes.label}>Personal</h2>
           <br />
           <br />
           <h2 className={classes.label}>School</h2>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={16}>
           <Gallery data={constants.PORTFOLIO.PERSONAL} />
           <Gallery data={constants.PORTFOLIO.SCHOOL} />
         </Grid>
