@@ -3,11 +3,11 @@ import "./Gallery.css";
 
 const Panel = props => {
   return (
-    <li style={{ backgroundImage: `url(${this.props.image})` }}>
+    <li style={{ backgroundImage: `url(${props.image})` }}>
       <div>
-        <a href={this.props.link}>
-          <h2>{this.props.name}</h2>
-          <p>{this.props.description}</p>
+        <a href={props.link}>
+          <h2>{props.name}</h2>
+          <p>{props.description}</p>
         </a>
       </div>
     </li>
