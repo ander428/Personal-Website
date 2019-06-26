@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@material-ui/icons": "latest",
     "@trendmicro/react-sidenav": "^0.4.5",
     "clsx": "^1.0.4",
@@ -10,10 +13,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-metismenu": "^1.4.0",
+    "react-pdf": "^4.1.0",
     "react-scripts": "^2.1.8",
     "react-sidenav": "^4.0.3",
-    "react-transition-group": "^4.1.1",
-    "react-pdf": "^4.1.0"
+    "react-transition-group": "^4.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

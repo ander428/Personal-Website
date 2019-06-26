@@ -4,11 +4,11 @@ import { constants } from "../../utils/constants";
 import { withStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 
-const styles = {
+const styles = theme => ({
   label: {
     writingMode: "vertical-rl",
     textOrientation: "upright",
-    borderRight: "5px dotted",
+    borderRight: theme.border,
     fontSize: "30px"
   },
   titles: {
@@ -20,7 +20,7 @@ const styles = {
     marginRight: "auto",
     paddingTop: "5vh"
   }
-};
+});
 
 const PortfolioPage = props => {
   const { classes } = props;

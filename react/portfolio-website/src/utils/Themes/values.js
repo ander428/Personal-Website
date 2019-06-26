@@ -9,5 +9,6 @@ export const settings = {
 };
 
 export const colors = {
-  BLACK: "#000"
+  BLACK: "#000",
+  CHAPMAN_RED: "#A50034"
 };

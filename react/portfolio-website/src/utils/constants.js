@@ -31,19 +31,19 @@ export const constants = {
       id: "a",
       title: "Email",
       link: "ander428@mail.chapman.edu",
-      icon: ""
+      icon: "fas fa-envelope fa-2x"
     },
     {
       id: "b",
       title: "Github",
       link: "github.com/ander428",
-      icon: ""
+      icon: "fab fa-github-square fa-2x"
     },
     {
       id: "c",
       title: "LinkedIn",
       link: "linkedin.com/ander428",
-      icon: ""
+      icon: "fab fa-linkedin fa-2x"
     }
   ],
   PORTFOLIO: {
