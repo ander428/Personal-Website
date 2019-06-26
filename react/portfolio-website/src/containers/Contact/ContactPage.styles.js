@@ -25,6 +25,13 @@ const styles = theme => ({
   },
   grid: {
     height: "100%"
+  },
+  content: {
+    textDecoration: "none",
+    color: "white",
+    "&:hover": {
+      textDecoration: "none"
+    }
   }
 });
 

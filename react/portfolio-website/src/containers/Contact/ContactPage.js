@@ -31,7 +31,9 @@ const ContactPage = props => {
                 <i className={contact.icon} />
               </Grid>
               <Grid item xs={6}>
-                <h5>{contact.link}</h5>
+                <a className={classes.content} href={contact.link}>
+                  {contact.title}
+                </a>
               </Grid>
             </Grid>
           ))}

@@ -59,7 +59,7 @@
     transform: translateX(50%);
     -webkit-transition: all 400ms ease;
     transition: all 400ms ease;
-    top: 66.67%;
+    top: 60%;
 }
 .accordion ul li div a h2 {
     font-family: Montserrat,sans-serif;
@@ -72,8 +72,8 @@
     position: relative;
     word-wrap: break-word;
     overflow: hidden;
-    width: 75%;
-    font-size: 13.5px;
+    width: 90%;
+    font-size: 13px;
 }
 
 .accordion ul:hover li {width: 10%;}

@@ -3,24 +3,7 @@ import Gallery from "../../components/Gallery/Gallery";
 import { constants } from "../../utils/constants";
 import { withStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-
-const styles = theme => ({
-  label: {
-    writingMode: "vertical-rl",
-    textOrientation: "upright",
-    borderRight: theme.border,
-    fontSize: "30px"
-  },
-  titles: {
-    height: "40vh",
-    paddingLeft: "10vw"
-  },
-  grid: {
-    marginLeft: "auto",
-    marginRight: "auto",
-    paddingTop: "5vh"
-  }
-});
+import styles from "./PortfolioPage.styles.js";
 
 const PortfolioPage = props => {
   const { classes } = props;

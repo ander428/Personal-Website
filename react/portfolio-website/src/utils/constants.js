@@ -29,25 +29,35 @@ export const constants = {
   CONTACT: [
     {
       id: "a",
-      title: "Email",
-      link: "ander428@mail.chapman.edu",
+      title: "ander428@mail.chapman.edu",
+      link: "mailto:ander428@mail.chapman.edu",
       icon: "fas fa-envelope fa-2x"
     },
     {
       id: "b",
-      title: "Github",
-      link: "github.com/ander428",
+      title: "github.com/ander428",
+      link: "https://www.github.com/ander428",
       icon: "fab fa-github-square fa-2x"
     },
     {
       id: "c",
-      title: "LinkedIn",
-      link: "linkedin.com/ander428",
+      title: "linkedin.com/in/ander428",
+      link: "https://www.linkedin.com/in/ander428/",
       icon: "fab fa-linkedin fa-2x"
     }
   ],
   PORTFOLIO: {
     PERSONAL: [
+      {
+        name: "This website",
+        image: "/imgs/portfolio/PW.jpeg",
+        link:
+          "https://github.com/ander428/Personal-Website/tree/master/react/portfolio-website",
+        description:
+          "This website is a React.js project that replaces my old HTML/CSS site. It uses technologies " +
+          "such as 'Hooks', React-Router and Material-UI on React v16. I was inspired to take on this task to improve " +
+          "my web development skills and better learn React.js"
+      },
       {
         name: "APA Formatter",
         image: "/imgs/portfolio/APA.png",
@@ -62,7 +72,7 @@ export const constants = {
         image: "/imgs/portfolio/truevine1.png",
         link: "https://github.com/madden-man/TrueVine-Android",
         description:
-          "TrueVine is an app designed to help members of collegiate organizations communicate! By combiningthe messaging functionality of " +
+          "TrueVine is a mobile app designed to help members of collegiate organizations communicate! By combiningthe messaging functionality of " +
           "Rocket Chat with a calendar (and Google Calendar integration), students can more effectively plan events and talk to each other about plans" +
           " for the club as a whole. I parntered with a small team of people on this project with the goal of solving communication issues in our clubs on campus!"
       }
@@ -73,18 +83,27 @@ export const constants = {
         image: "/imgs/portfolio/DensityMap.png",
         link: "https://github.com/ander428/Denver-Crime",
         description:
-          "This project used three machine learning algorithms, Hierarchical Agglomerative Clustering, DBSCAN, and a first order Markov model. " +
-          "I was mainly responsible for implementing the Markov model and graphing data on a map. The model uses all 400,000 data points with the most previous crime " +
-          "as a reference point to predict the next crime in a given neighborhood in the city of Denver."
+          "This project was my final project for my machine learning course. The goal of this program is to predict crimes in Denver, CO " +
+          "based on neighborhoods using three machine learning algorithms: HAC, DBSCAN, and a first order Markov model. " +
+          "I was responsible for implementing the Markov model and graphing data on a map. The model uses all 400,000 data points with the most previous crime " +
+          "as a point of reference."
       },
       {
         name: "Financial Manager",
         image: "/imgs/portfolio/DBFinal1.png",
         link: "https://github.com/karlhickel/Database-Final-Project",
         description:
-          "This project is a website built using Django. It is a database of financial information in a table of transactions records and analytics " +
+          "This project is a website built using Django as a database of financial information in a table of transactions records and analytics " +
           "showing useful visualizations using Google's visualizations API. Using MySQL as a backend, this project connected to a Google Cloud account " +
           "provided by Chapman to store the database and performs a list of required queries (listed on the README)."
+      },
+      {
+        name: "Keck Me Out",
+        image: "/imgs/portfolio/networking.jpg",
+        link: "https://github.com/karlhickel/Database-Final-Project",
+        description:
+          "This project is a game made in Unity as a research project for Student Research Day 2018 for my Computer Networks & Communications class at Chapman University. " +
+          "The game is a 2d top-down cooperative puzzle game in which the players must communicate and work together to complete a maze."
       },
       {
         name: "Prison Break",
