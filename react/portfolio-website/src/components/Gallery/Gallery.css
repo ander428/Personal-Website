@@ -45,47 +45,48 @@
     color: #fff;
     text-decoration: none;
     font-family: Open Sans, sans-serif;
-    transition: all 200ms ease;
+    transition: all 500ms ease;
 }
 
 .accordion ul li div a * {
     opacity: 0;
     margin: 0;
-    position: relative;
+    position: absolute;
     z-index: 5;
     overflow: hidden;
     text-align: justify;
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
+    -webkit-transform: translateX(75%);
+    transform: translateX(200%);
     -webkit-transition: all 400ms ease;
-    transition: all 400ms ease;
-    top: 60%;
+    transition: all 500ms ease 50ms;
 }
 .accordion ul li div a h2 {
     font-family: Montserrat,sans-serif;
     font-size: 28px;
+    position: relative;
     text-transform: uppercase;
     margin-bottom: 2px;
+    bottom: 10%;
 }
 
 .accordion ul li div a p {
-    position: relative;
     word-wrap: break-word;
     overflow: hidden;
     width: 90%;
     font-size: 13px;
+    bottom: 10%;
 }
 
 .accordion ul li div a h5 {
     font-family: "Times New Roman", Times, serif;
     font-style: italic;
-    position: relative;
+    position: absolute;
     word-wrap: break-word;
     overflow: hidden;
     font-size: 18px;
     margin-right: 0;
-    top: 0;
-    right: 0;
+    top: 2%;
+    right: 2%;
     text-align: right;
 }
 
@@ -95,6 +96,7 @@
 
 .accordion ul:hover li:hover a * {
     opacity: 1;
+    width: 90%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }

@@ -7,8 +7,11 @@ const Panel = props => {
       <div>
         <a href={props.link}>
           <h5>{props.topic}</h5>
-          <h2>{props.name}</h2>
-          <p>{props.description}</p>
+
+          <p>
+            <h2>{props.name}</h2>
+            {props.description}
+          </p>
         </a>
       </div>
     </li>
