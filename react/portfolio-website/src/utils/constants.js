@@ -115,7 +115,7 @@ export const constants = {
         name: "Prison Break",
         image: "/imgs/portfolio/prisonbreak.png",
         topic: "Game Development",
-        link: url + "/resources/PB_GDD.pdf",
+        link: "/resources/PB_GDD.pdf",
         description:
           "Prison Break is a 2.5D, 3D designed Action Side-Scroller in which the player is attempting to break out of the Max Security Prison " +
           "they wound up in. Work to complete the obstacles in your way, while avoiding traps, enemies, and being detected by The Tower. The game was a group " +

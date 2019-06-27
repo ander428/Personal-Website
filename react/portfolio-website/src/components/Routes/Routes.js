@@ -10,7 +10,11 @@ const Routes = props => {
     <Route
       render={({ location }) => (
         <TransitionGroup>
-          <CSSTransition timeout={300} classNames="fade" key={location.key}>
+          <CSSTransition
+            timeout={300}
+            classNames="fade"
+            key={location.pathname}
+          >
             <Switch location={location}>
               <Route exact path="/" component={withRouter(HomePage)} />
               <Route path="/portfolio" component={withRouter(PortfolioPage)} />
