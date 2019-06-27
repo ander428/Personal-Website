@@ -18,23 +18,26 @@ const ContactPage = props => {
           className={classes.grid}
         >
           {constants.CONTACT.map(contact => (
-            <Grid
-              container
-              item
-              alignItems={"center"}
-              alignContent={"center"}
-              justify={"center"}
-              direction={"row"}
-              style={{ marginBottom: "3%" }}
-            >
-              <Grid item xs={0} key={contact.id}>
-                <i className={contact.icon} />
-              </Grid>
-              <Grid item xs={6}>
-                <a className={classes.content} href={contact.link}>
-                  {contact.title}
-                </a>
-              </Grid>
+            <Grid container key={contact.id} className={classes.media}>
+              <a style={{ height: "100%", width: "100%" }} href={contact.link}>
+                <Grid
+                  container
+                  alignItems={"center"}
+                  alignContent={"center"}
+                  justify={"center"}
+                  direction={"row"}
+                  className={classes.content}
+                >
+                  <Grid item xs={1}>
+                    <i className={contact.icon} />
+                  </Grid>
+                  <Grid item xs={8}>
+                    <a className={classes.content} href={contact.link}>
+                      {contact.title}
+                    </a>
+                  </Grid>
+                </Grid>
+              </a>
             </Grid>
           ))}
         </Grid>

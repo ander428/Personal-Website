@@ -10,13 +10,13 @@ const PortfolioPage = props => {
   return (
     <div className={"page"}>
       <Grid container spacing={8} className={classes.grid}>
-        <Grid item xs={0} className={classes.titles}>
+        <Grid item xs={"auto"} className={classes.titles}>
           <h2 className={classes.label}>Personal</h2>
           <br />
           <br />
           <h2 className={classes.label}>School</h2>
         </Grid>
-        <Grid item xs={16}>
+        <Grid item xs={"auto"}>
           <Gallery data={constants.PORTFOLIO.PERSONAL} />
           <Gallery data={constants.PORTFOLIO.SCHOOL} />
         </Grid>

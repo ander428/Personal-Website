@@ -14,6 +14,7 @@
     "react-dom": "^16.8.6",
     "react-metismenu": "^1.4.0",
     "react-pdf": "^4.1.0",
+    "react-rounded-image": "^2.0.2",
     "react-scripts": "^2.1.8",
     "react-sidenav": "^4.0.3",
     "react-transition-group": "^4.1.1"

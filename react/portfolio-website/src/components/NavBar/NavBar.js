@@ -1,17 +1,10 @@
-import React, { useState } from "react";
-import { withStyles } from "@material-ui/core/styles/index";
+import React from "react";
 import "@trendmicro/react-sidenav/dist/react-sidenav.css";
 import "./NavBar.css";
 import { constants } from "../../utils/constants";
 import { Link } from "react-router-dom";
 
 const NavBar = props => {
-  const { classes } = props;
-  const [open, setOpen] = useState(false);
-
-  function toggle() {
-    setOpen(!open);
-  }
   return (
     <nav>
       <ul>

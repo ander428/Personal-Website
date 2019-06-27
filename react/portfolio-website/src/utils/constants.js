@@ -51,6 +51,7 @@ export const constants = {
       {
         name: "This website",
         image: "/imgs/portfolio/PW.jpeg",
+        topic: "Web Development",
         link:
           "https://github.com/ander428/Personal-Website/tree/master/react/portfolio-website",
         description:
@@ -61,6 +62,7 @@ export const constants = {
       {
         name: "APA Formatter",
         image: "/imgs/portfolio/APA.png",
+        topic: "Windows Forms",
         link: "https://github.com/ander428/APA-Formatter",
         description:
           "APA Formatter is a desktop application similar to EasyBib.com that takes in information from a source and returns the bibliography " +
@@ -70,17 +72,19 @@ export const constants = {
       {
         name: "True Vine",
         image: "/imgs/portfolio/truevine1.png",
+        topic: "Mobile Development",
         link: "https://github.com/madden-man/TrueVine-Android",
         description:
-          "TrueVine is a mobile app designed to help members of collegiate organizations communicate! By combiningthe messaging functionality of " +
+          "TrueVine is a mobile app designed to help members of collegiate organizations communicate! By combining the messaging functionality of " +
           "Rocket Chat with a calendar (and Google Calendar integration), students can more effectively plan events and talk to each other about plans" +
-          " for the club as a whole. I parntered with a small team of people on this project with the goal of solving communication issues in our clubs on campus!"
+          " for the club as a whole. I partnered with a small team of people on this project with the goal of solving communication issues in our clubs on campus!"
       }
     ],
     SCHOOL: [
       {
         name: "Denver Crime",
         image: "/imgs/portfolio/DensityMap.png",
+        topic: "Machine Learning",
         link: "https://github.com/ander428/Denver-Crime",
         description:
           "This project was my final project for my machine learning course. The goal of this program is to predict crimes in Denver, CO " +
@@ -91,6 +95,7 @@ export const constants = {
       {
         name: "Financial Manager",
         image: "/imgs/portfolio/DBFinal1.png",
+        topic: "Database Management",
         link: "https://github.com/karlhickel/Database-Final-Project",
         description:
           "This project is a website built using Django as a database of financial information in a table of transactions records and analytics " +
@@ -100,6 +105,7 @@ export const constants = {
       {
         name: "Keck Me Out",
         image: "/imgs/portfolio/networking.jpg",
+        topic: "Computer Networking / Game Dev",
         link: "https://github.com/karlhickel/Database-Final-Project",
         description:
           "This project is a game made in Unity as a research project for Student Research Day 2018 for my Computer Networks & Communications class at Chapman University. " +
@@ -108,6 +114,7 @@ export const constants = {
       {
         name: "Prison Break",
         image: "/imgs/portfolio/prisonbreak.png",
+        topic: "Game Development",
         link: url + "/resources/PB_GDD.pdf",
         description:
           "Prison Break is a 2.5D, 3D designed Action Side-Scroller in which the player is attempting to break out of the Max Security Prison " +

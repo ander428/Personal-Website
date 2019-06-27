@@ -76,6 +76,19 @@
     font-size: 13px;
 }
 
+.accordion ul li div a h5 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    position: relative;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 18px;
+    margin-right: 0;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
 .accordion ul:hover li {width: 10%;}
 .accordion ul:hover li:hover {width: 60%;}
 .accordion ul:hover li:hover a {background: rgba(0, 0, 0, 0.7); }

@@ -3,7 +3,7 @@ import { colors } from "../../utils/Themes/values";
 const styles = theme => ({
   title: {
     marginBottom: 0,
-    marginTop: "1%",
+    marginTop: "2%",
     width: "25vw",
     marginLeft: "auto",
     marginRight: "auto",
@@ -29,8 +29,16 @@ const styles = theme => ({
   content: {
     textDecoration: "none",
     color: "white",
+    fontSize: 25,
     "&:hover": {
-      textDecoration: "none"
+      textDecoration: "none",
+      color: colors.BLACK
+    }
+  },
+  media: {
+    marginBottom: "3%",
+    "&:hover": {
+      color: colors.BLACK
     }
   }
 });
