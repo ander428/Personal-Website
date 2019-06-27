@@ -20,7 +20,14 @@ const HomePage = props => {
         justify={"center"}
         className={classes.grid}
       >
-        <Grid container item xs={3} justify={"center"}>
+        <Grid
+          container
+          alignItems={"center"}
+          direction={"column"}
+          item
+          xs={3}
+          justify={"center"}
+        >
           <Grid item>
             <ExampleComponent
               image={"/imgs/profile2.jpg"}
@@ -31,7 +38,7 @@ const HomePage = props => {
             />
           </Grid>
           <Grid item>
-            <h2 style={{ textAlign: "center", marginTop: "5%" }}>
+            <h2 style={{ textAlign: "center", marginTop: "10%" }}>
               Joshua Anderson
             </h2>
           </Grid>
