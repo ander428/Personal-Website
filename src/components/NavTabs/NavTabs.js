@@ -3,7 +3,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import {constants} from "../../utils/constants";
 import useStyles from "./NavTabs.styles";
-import "./NavTabs.css"
 
 function a11yProps(index) {
     return {
@@ -30,29 +29,28 @@ const NavTabs = props => {
     };
 
     return (
-        <nav>
-            <div className={"parent"}>
-                <Tabs
-                    style={{height: "100%"}}
-                    variant="fullWidth"
-                    value={value}
-                    onChange={handleChange}
-                    classes={{root: classes.tabs, flexContainer: classes.flex}}
-                    centered
-                >
-                    {constants.MENU.map(tab => (
-                        <LinkTab
-                             key={tab.id}
-                             label={<span className={classes.label}>{tab.title}</span>}
-                             href={(tab.title === "Resume" ? "" : "/#") +
-                             tab.url}
-                             {...a11yProps(tab.id)}
+        <Tabs
+            variant="fullWidth"
+            value={value}
+            onChange={handleChange}
+            classes={{
+                root: classes.root,
+                flexContainer: classes.flex,
+            }}
+            centered
+        >
+            {constants.MENU.map(tab => (
+                <LinkTab
+                     key={tab.id}
+                     style={{color: "lightgrey", textDecoration: "none"}}
+                     label={<span className={classes.label}>{tab.title}</span>}
+                     href={(tab.title === "Resume" ? "" : "/#") +
+                     tab.url}
+                     {...a11yProps(tab.id)}
 
-                        />
-                    ))}
-                </Tabs>
-            </div>
-        </nav>
+                />
+            ))}
+        </Tabs>
     );
 };
 
