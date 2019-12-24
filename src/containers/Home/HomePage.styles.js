@@ -27,7 +27,8 @@ const styles = theme => ({
   },
   gridItemNotMobile: {
     width: "50%",
-    marginTop: "5%",
+    marginTop: "auto",
+    marginBottom: "auto",
     float: "left"
   },
   gridItemMobile: {
@@ -39,13 +40,27 @@ const styles = theme => ({
   },
   h2Mobile: {
     textAlign: "center",
-    marginTop: "5%"
+    marginTop: "5%",
+    fontSize: 32
   },
   h2NotMobile: {
     textAlign: "center",
+    fontSize: 50
+  },
+  imgMobile: {
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "250px",
+  },
+  imgNotMobile: {
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "500px",
   },
   paper: {
     position: "relative",
+    display: "flex",
+    flexDirection: "column",
     boxShadow:
       "inset 0 -0.1em 0.1em rgba(0, 0, 0, 0.25)," +
       " inset 0 0.2em 0.2em rgba(0, 0, 0, 0.25)",
@@ -53,8 +68,8 @@ const styles = theme => ({
     height: "100%",
     padding: "15px",
     borderRadius: "10px",
-    marginLeft: "auto",
-    marginRight: "auto",
+    margin: "auto",
+    justifyContent: "center",
     textAlign: "center",
     backgroundColor: colors.CHAPMAN_RED
   },

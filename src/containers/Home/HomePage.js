@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect} from "react";
 import styles from "./HomePage.styles.js";
-import { Grid, Paper, withStyles } from "@material-ui/core";
+import { withStyles } from "@material-ui/core";
 import RoundImage from "react-rounded-image";
 import { colors } from "../../utils/Themes/values";
 import { constants } from "../../utils/constants";
@@ -9,8 +9,9 @@ import classNames from "classnames";
 const HomePage = props => {
   const { classes } = props;
   const email = constants.CONTACT[0];
+  const mobileWidth = 1350;
 
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+  const [isMobile, setIsMobile] = React.useState(window.innerWidth <= mobileWidth);
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange);
@@ -21,54 +22,59 @@ const HomePage = props => {
   });
 
   const handleWindowSizeChange = useCallback(() => {
-    setWindowWidth({ width: window.innerWidth });
+    window.innerWidth > mobileWidth ? setIsMobile(false) : setIsMobile(true);
+    console.log(window.innerWidth);
   }, []);
 
   return (
     <div className={"page"}
-         style={windowWidth > 500 ? null : {overflow: "auto"}}
+         style={!isMobile ? null : {overflow: "auto"}}
     >
       <div className={classes.header}>
-        <h1 className={classes.title}>Hello World!</h1>
+        <h2 className={classNames({
+          [classes.h2Mobile]: isMobile,
+          [classes.h2NotMobile]: !isMobile
+        })}>
+          Joshua Anderson
+        </h2>
         <div className={classes.bottomLine}/>
+        <h5 style={{ textAlign: "center", marginTop: "0.5%" }}>
+          Student | Developer | Data Analyst
+        </h5>
+
       </div>
 
-      <div>
+      <div style={{marginTop: "5%", height:"60vh"}}>
         <div className={classNames({
-          [classes.gridItemMobile]: (windowWidth < 500),
-          [classes.gridItemNotMobile]: (windowWidth > 500)
+          [classes.gridItemMobile]: isMobile,
+          [classes.gridItemNotMobile]: !isMobile
         })}
         >
-          <div style={{marginLeft: "auto", marginRight: "auto", width: "250px", marginTop: "5%"}}>
+          <div className={classNames({
+            [classes.imgMobile]: isMobile,
+            [classes.imgNotMobile]: !isMobile
+          })}>
             <RoundImage
                 image={"/imgs/profile2.jpg"}
                 roundedColor={colors.CHAPMAN_RED}
-                imageWidth="250"
-                imageHeight="250"
-                roundedSize="4"
+                imageWidth={!isMobile ? "500" : "250"}
+                imageHeight={!isMobile ? "500" : "250"}
+                roundedSize="6"
             />
           </div>
 
-          <h2 className={classNames({
-            [classes.h2Mobile]: (windowWidth < 500),
-            [classes.h2NotMobile]: (windowWidth > 500)
-          })}>
-            Joshua Anderson
-          </h2>
 
-          <h5 style={{ textAlign: "center" }}>
-            Student | Developer | Data Analyst
-          </h5>
         </div>
 
         <div className={classNames({
-          [classes.gridItemMobile]: (windowWidth < 500),
-          [classes.gridItemNotMobile]: (windowWidth > 500)
+          [classes.gridItemMobile]: isMobile,
+          [classes.gridItemNotMobile]: !isMobile
         })}
+             style={{height: "100%"}}
         >
           <div className={classes.paper}>
             <h2>About Me</h2>
-            <p style={{ fontSize: "20px" }}>
+            <p style={{ fontSize: "25px" }}>
               My name is Joshua Anderson. I am a Senior at Chapman University
               studying a B.S. in Computer Science. I have always wanted to make
               an impact in the world, and it is a goal of mine to not just do
