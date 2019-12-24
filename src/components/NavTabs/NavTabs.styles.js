@@ -14,8 +14,10 @@ const useStyles = makeStyles((theme) => createStyles({
     height: "100%"
   },
   label: {
-    fontSize: 25
-  }
+    fontSize: 30
+  },
+
+
 }));
 
 export default useStyles;

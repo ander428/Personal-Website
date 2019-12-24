@@ -54,7 +54,7 @@ export const constants = {
         topic: "Web Development",
         dev: "React.js",
         link:
-          "https://github.com/ander428/Personal-Website/tree/master/react/portfolio-website",
+          "https://github.com/ander428/Personal-Website/tree/master/",
         description:
           "This website is a React.js project that replaces my old HTML/CSS site. It uses technologies " +
           "such as 'Hooks', React-Router and Material-UI on React v16. I was inspired to take on this task to improve " +
@@ -134,5 +134,8 @@ export const constants = {
   },
   ICONS: {
     info: <i className="fas fa-info-circle" />
+  },
+  GLOBAL_VARS: {
+    windowSize: 1350
   }
 };

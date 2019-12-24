@@ -57,6 +57,13 @@ const styles = theme => ({
     marginRight: "auto",
     width: "400px",
   },
+  pMobile: {
+    fontSize: "25px"
+  },
+  pNotMobile: {
+    fontSize: "25px",
+    textAlign: "justify"
+  },
   paper: {
     position: "relative",
     boxShadow:
