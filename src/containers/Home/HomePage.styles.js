@@ -55,7 +55,7 @@ const styles = theme => ({
   imgNotMobile: {
     marginLeft: "auto",
     marginRight: "auto",
-    width: "500px",
+    width: "400px",
   },
   paper: {
     position: "relative",

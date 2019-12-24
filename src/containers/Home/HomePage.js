@@ -57,8 +57,8 @@ const HomePage = props => {
             <RoundImage
                 image={"/imgs/profile2.jpg"}
                 roundedColor={colors.CHAPMAN_RED}
-                imageWidth={!isMobile ? "500" : "250"}
-                imageHeight={!isMobile ? "500" : "250"}
+                imageWidth={!isMobile ? "400" : "250"}
+                imageHeight={!isMobile ? "400" : "250"}
                 roundedSize="6"
             />
           </div>
