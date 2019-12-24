@@ -74,7 +74,7 @@ const HomePage = props => {
         >
           <div className={classes.paper}>
             <h2>About Me</h2>
-            <p style={{ fontSize: "25px" }}>
+            <p style={{ fontSize: "25px", textAlign: "justify" }}>
               My name is Joshua Anderson. I am a Senior at Chapman University
               studying a B.S. in Computer Science. I have always wanted to make
               an impact in the world, and it is a goal of mine to not just do
