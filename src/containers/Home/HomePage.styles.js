@@ -16,24 +16,43 @@ const styles = theme => ({
   header: {
     marginBottom: 0,
     marginTop: "2%",
-    width: "25vw",
     marginLeft: "auto",
     marginRight: "auto",
+  },
+  bottomLine: {
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "25%",
     borderBottom: theme.border
   },
-  grid: {
-    height: "75%"
+  gridItemNotMobile: {
+    width: "50%",
+    marginTop: "5%",
+    float: "left"
+  },
+  gridItemMobile: {
+    marginLeft: "auto",
+    marginRight: "auto",
+    width: "90%",
+    marginTop: "5%",
+    marginBottom: "5%"
+  },
+  h2Mobile: {
+    textAlign: "center",
+    marginTop: "5%"
+  },
+  h2NotMobile: {
+    textAlign: "center",
   },
   paper: {
     position: "relative",
     boxShadow:
       "inset 0 -0.1em 0.1em rgba(0, 0, 0, 0.25)," +
       " inset 0 0.2em 0.2em rgba(0, 0, 0, 0.25)",
-    width: "125%",
-    height: "125%",
+    width: "90%",
+    height: "100%",
     padding: "15px",
     borderRadius: "10px",
-    marginTop: "5%",
     marginLeft: "auto",
     marginRight: "auto",
     textAlign: "center",
