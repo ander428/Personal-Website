@@ -59,13 +59,11 @@ const styles = theme => ({
   },
   paper: {
     position: "relative",
-    display: "flex",
-    flexDirection: "column",
     boxShadow:
       "inset 0 -0.1em 0.1em rgba(0, 0, 0, 0.25)," +
       " inset 0 0.2em 0.2em rgba(0, 0, 0, 0.25)",
     width: "90%",
-    height: "100%",
+    height: "min-content",
     padding: "15px",
     borderRadius: "10px",
     margin: "auto",
