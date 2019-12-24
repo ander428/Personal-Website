@@ -5,7 +5,7 @@ import RoundImage from "react-rounded-image";
 import { colors } from "../../utils/Themes/values";
 import { constants } from "../../utils/constants";
 import classNames from "classnames";
-import isMobile from "react-device-detect"
+import {isMobile} from "react-device-detect"
 
 const HomePage = props => {
   const { classes } = props;
