@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect} from 'react';
+import React from 'react';
 import {constants} from "../../utils/constants";
 import useStyles from "./NavTabs.styles";
 import {
@@ -74,7 +74,7 @@ const NavTabs = props => {
         isMobile
             ? (<div>
                 <CssBaseline />
-                    <AppBar style={{backgroundColor: colors.CHAPMAN_RED}}>
+                    <AppBar style={{backgroundColor: colors.CHAPMAN_RED, height: "10vh"}}>
                         <Toolbar>
                             <IconButton
                                 edge={"end"}
