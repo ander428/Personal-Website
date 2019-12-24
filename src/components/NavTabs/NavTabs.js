@@ -74,7 +74,7 @@ const NavTabs = props => {
         isMobile
             ? (<div>
                 <CssBaseline />
-                    <AppBar style={{backgroundColor: colors.CHAPMAN_RED, height: "10vh"}}>
+                    <AppBar style={{backgroundColor: colors.CHAPMAN_RED, height: "8vh"}}>
                         <Toolbar>
                             <IconButton
                                 edge={"end"}
