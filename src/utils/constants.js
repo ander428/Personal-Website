@@ -52,6 +52,7 @@ export const constants = {
         name: "This website",
         image: "/imgs/portfolio/PW.jpeg",
         topic: "Web Development",
+        dev: "React.js",
         link:
           "https://github.com/ander428/Personal-Website/tree/master/react/portfolio-website",
         description:
@@ -63,6 +64,7 @@ export const constants = {
         name: "APA Formatter",
         image: "/imgs/portfolio/APA.png",
         topic: "Windows Forms",
+        dev: "C#.NET / Java",
         link: "https://github.com/ander428/APA-Formatter",
         description:
           "APA Formatter is a desktop application similar to EasyBib.com that takes in information from a source and returns the bibliography " +
@@ -73,6 +75,7 @@ export const constants = {
         name: "True Vine",
         image: "/imgs/portfolio/truevine1.png",
         topic: "Mobile Development",
+        dev: "Java/Android",
         link: "https://github.com/madden-man/TrueVine-Android",
         description:
           "TrueVine is a mobile app designed to help members of collegiate organizations communicate! By combining the messaging functionality of " +
@@ -85,6 +88,7 @@ export const constants = {
         name: "Denver Crime",
         image: "/imgs/portfolio/DensityMap.png",
         topic: "Machine Learning",
+        dev: "Python",
         link: "https://github.com/ander428/Denver-Crime",
         description:
           "This project was my final project for my machine learning course. The goal of this program is to predict crimes in Denver, CO " +
@@ -96,6 +100,7 @@ export const constants = {
         name: "Stanford MSA",
         image: "/imgs/portfolio/MSA.png",
         topic: "Machine Learning",
+        dev: "R",
         link: "https://github.com/ander428/StanfordMSA",
         description:
           "An in depth analysis of mass shootings in America from 1966 to 2016, final project for MGSC 310 using the Stanford_MSA_Database. This project " +
@@ -106,6 +111,7 @@ export const constants = {
         name: "Financial Manager",
         image: "/imgs/portfolio/DBFinal1.png",
         topic: "Database Management",
+        dev: "Python (Django) / Google Cloud",
         link: "https://github.com/karlhickel/Database-Final-Project",
         description:
           "This project is a website built using Django as a database of financial information in a table of transactions records and analytics " +
@@ -117,6 +123,7 @@ export const constants = {
         name: "Prison Break",
         image: "/imgs/portfolio/prisonbreak.png",
         topic: "Game Development",
+        dev: "Unreal 4",
         link: "/resources/PB_GDD.pdf",
         description:
           "Prison Break is a 2.5D, 3D designed Action Side-Scroller in which the player is attempting to break out of the Max Security Prison " +

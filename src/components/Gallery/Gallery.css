@@ -1,12 +1,12 @@
 .accordion {
-    width: 90vw;
-    height: 40vh;
-    overflow: hidden;
-    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
 }
 
 .accordion ul {
     width: 100%;
+    height: 100%;
     display: table;
     table-layout: fixed;
     margin: 0;
@@ -35,7 +35,7 @@
 
 .accordion ul li div a {
     display: block;
-    height: 40vh;
+    height: 100%;
     width: 100%;
     position: relative;
     z-index: 3;
@@ -88,6 +88,19 @@
     top: 2%;
     right: 2%;
     text-align: right;
+}
+
+.accordion ul li div a h4 {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    position: absolute;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 18px;
+    margin-right: 0;
+    top: 2%;
+    left: 2%;
+    text-align: left;
 }
 
 .accordion ul:hover li {width: 10%;}
