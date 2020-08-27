@@ -1,6 +1,24 @@
 import { colors } from "../../utils/Themes/values";
 
 const styles = theme => ({
+  background: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 0,
+    maxHeight: "65vh",
+    // backgroundImage:"url('/imgs/background_home.png')",
+  },
+  contentNotMobile: {
+    marginTop: 25,
+    marginBottom: 25
+  },
+  contentMobile: {
+    marginTop: 100,
+    width: "100%"
+  },
   title: {
     marginBottom: 0,
     marginLeft: "auto",
@@ -12,12 +30,6 @@ const styles = theme => ({
     marginLeft: "auto",
     marginRight: "auto",
     transition: theme.transition
-  },
-  header: {
-    marginBottom: 0,
-    marginTop: "2%",
-    marginLeft: "auto",
-    marginRight: "auto",
   },
   bottomLine: {
     marginLeft: "auto",
@@ -37,15 +49,6 @@ const styles = theme => ({
     width: "90%",
     marginTop: "5%",
     marginBottom: "5%"
-  },
-  h2Mobile: {
-    textAlign: "center",
-    marginTop: "5%",
-    fontSize: 32
-  },
-  h2NotMobile: {
-    textAlign: "center",
-    fontSize: 50
   },
   imgMobile: {
     marginLeft: "auto",
@@ -85,6 +88,20 @@ const styles = theme => ({
     "&:hover": {
       textDecoration: "none",
       color: colors.BLACK
+    }
+  },
+  link: {
+    textDecoration: "none",
+    color: colors.DARK_SEA_GREEN,
+    "&:hover": {
+      color: colors.DARK_SEA_GREEN
+    }
+  },
+  text: {
+    fontSize: 18,
+    color: colors.TEXT,
+    "& p": {
+      color:colors.TEXT
     }
   }
 });

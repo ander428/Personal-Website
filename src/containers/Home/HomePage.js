@@ -1,87 +1,60 @@
 import React from "react";
 import styles from "./HomePage.styles.js";
-import { withStyles } from "@material-ui/core";
-import RoundImage from "react-rounded-image";
-import { colors } from "../../utils/Themes/values";
+import { withStyles, Button } from "@material-ui/core";
+import { isMobile } from "react-device-detect";
 import { constants } from "../../utils/constants";
-import classNames from "classnames";
-import {isMobile} from "react-device-detect"
+import Header from "../../components/Header/Header";
+import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
 
 const HomePage = props => {
   const { classes } = props;
-  const email = constants.CONTACT[0];
+  const buttonLink = "AboutMeHeader";
+
+  const description = (
+  <div className={classes.text}>
+    <p>I am a current graduate student working towards a </p>
+    <a href={"https://catalog.chapman.edu/preview_program.php?catoid=18&poid=3368&returnto=862"} 
+        className={classes.link}>
+      M.S. in Computational and Data Sciences
+    </a>
+    <p>at Chapman University in Orange, CA</p>
+    <p>
+      With endless amounts of data now available, I strive to learn and utilize statistical methods
+      to attack big data problems through well-supported research tasks. I aim to gain experience in both
+      industry and academia to cover relavent topics in my field.
+    </p>
+    
+  </div>)
 
   return (
     <div className={"page"}
-         style={!isMobile ? null : {overflow: "auto"}}
+         style={{overflow: "auto"}}
     >
-      <div className={classes.header}>
-        <h2 className={classNames({
-          [classes.h2Mobile]: isMobile,
-          [classes.h2NotMobile]: !isMobile
-        })}>
-          Joshua Anderson
-        </h2>
-        <div className={classes.bottomLine}/>
-        <h5 style={{ textAlign: "center", marginTop: "0.5%" }}>
-          Student | Developer | Data Analyst
-        </h5>
+       {/* header component */}
+      <Header 
+        src={"/imgs/background_home.png"} 
+        tabValue={0} 
+        title={"HELLO WORLD!"} 
+        button={"About Me"}
+        link={buttonLink}/>
 
-      </div>
+      <SocialButtons />
 
-      <div style={{marginTop: "5%", height:"60vh"}}>
-        <div className={classNames({
-          [classes.gridItemMobile]: isMobile,
-          [classes.gridItemNotMobile]: !isMobile
-        })}
-        >
-          <div className={classNames({
-            [classes.imgMobile]: isMobile,
-            [classes.imgNotMobile]: !isMobile
-          })}>
-            <RoundImage
-                image={"/imgs/profile2.jpg"}
-                roundedColor={colors.CHAPMAN_RED}
-                imageWidth={!isMobile ? "400" : "250"}
-                imageHeight={!isMobile ? "400" : "250"}
-                roundedSize="6"
-            />
-          </div>
-
-
+      {/* About me section */}
+      <h2 style={{ color: 'black', marginTop: '10vh' }} id={buttonLink}>ABOUT ME</h2>
+      {isMobile ? 
+        <div className={classes.contentMobile}>
+          {description}
         </div>
-
-        <div className={classNames({
-          [classes.gridItemMobile]: isMobile,
-          [classes.gridItemNotMobile]: !isMobile
-        })}
-             style={{height: "100%"}}
-        >
-          <div className={classes.paper}>
-            <h2>About Me</h2>
-            <p className={classNames({
-              [classes.pMobile]: isMobile,
-              [classes.pNotMobile]: !isMobile
-            })}>
-              My name is Joshua Anderson. I am a Senior at Chapman University
-              studying a B.S. in Computer Science. I have always wanted to make
-              an impact in the world, and it is a goal of mine to not just do
-              that in my everyday life, but also using my skills in software
-              engineering! I am always trying to challenge myself and find more
-              opportunities. If you would like to contact me concerning a
-              project or employment, feel free to email me at:
-            </p>
-            <a
-                href={email.link}
-                className={classes.email}
-                style={{ fontSize: "20px" }}
-            >
-              {email.title}
-            </a>
+      : <div className={classes.contentNotMobile}>
+        <div className="d-flex bd-highlight mb-3 justify-content-center">
+          <div className="p-2 bd-highlight col-example" style={{width: '50%'}}>
+            {description}
           </div>
         </div>
       </div>
-    </div>
+      } 
+      </div>
   );
 };
 

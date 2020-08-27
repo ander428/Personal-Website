@@ -1,45 +1,31 @@
 import { colors } from "../../utils/Themes/values";
 
 const styles = theme => ({
-  title: {
-    marginBottom: 0,
-    marginTop: "2%",
-    width: "25vw",
-    marginLeft: "auto",
-    marginRight: "auto",
-    transition: theme.transition,
-    borderBottom: theme.border
+  form: {
+    margin: 'auto',
+    width: '90%',
   },
-  paper: {
-    position: "relative",
-    boxShadow:
-      "inset 0 -0.1em 0.1em rgba(0, 0, 0, 0.25)," +
-      " inset 0 0.2em 0.2em rgba(0, 0, 0, 0.25)",
-    width: "50%",
-    height: "50%",
-    marginTop: "5%",
-    marginLeft: "auto",
-    marginRight: "auto",
-    textAlign: "center",
-    backgroundColor: colors.CHAPMAN_RED
+  profileImg: {
+    width: "inherit",
+    height: "inherit",
+    boxShadow: "inset 10px 10px 10px 10px rgba(0, 0, 0, 0.9)",
   },
-  grid: {
-    height: "100%"
+  listTitle: {
+    textAlign: "left"
   },
-  content: {
-    textDecoration: "none",
-    color: "white",
-    fontSize: 25,
-    "&:hover": {
-      textDecoration: "none",
-      color: colors.BLACK
+  list: {
+    color: colors.TEXT,
+    fontSize: "15px",
+    width: "100%",
+    marginLeft:30,
+    textAlign: "left",
+    padding: 10,
+    '& li': {
+      padding: 2
     }
   },
-  media: {
-    marginBottom: "3%",
-    "&:hover": {
-      color: colors.BLACK
-    }
+  contacts: {
+    margin: 50
   }
 });
 

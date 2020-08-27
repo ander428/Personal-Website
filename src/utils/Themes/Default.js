@@ -5,7 +5,9 @@ export const defaultTheme = createMuiTheme({
   radius: settings.radius,
   shadow: {
     default: settings.shadow,
-    inset: "inset 0 0 0 5px rgba(255, 255, 255, 0.1)"
+    inset: "inset 0 0 0 5px rgba(255, 255, 255, 0.1)",
+    insetB: "inset 0 -0.1em 0.1em rgba(0, 0, 0, 0.25)," +
+      " inset 0 0.2em 0.2em rgba(0, 0, 0, 0.25)"
   },
   border: "5px dotted",
   transition: {

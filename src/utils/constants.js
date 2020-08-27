@@ -1,9 +1,10 @@
-import React from "react";
-
 const url = "www.joshuawanderson.com";
 
 export const constants = {
   URL: url,
+  HOME: {
+    profile: "/imgs/grad.jpg"
+  },
   MENU: [
     {
       id: "6dTjQLmaE2AprxRl",
@@ -28,23 +29,26 @@ export const constants = {
   ],
   CONTACT: [
     {
-      id: "a",
-      title: "ander428@mail.chapman.edu",
-      link: "mailto:ander428@mail.chapman.edu",
-      icon: "fas fa-envelope fa-2x"
-    },
-    {
       id: "b",
-      title: "github.com/ander428",
+      name: "Github",
+      text: "ander428",
       link: "https://www.github.com/ander428",
       icon: "fab fa-github-square fa-2x"
     },
     {
       id: "c",
-      title: "linkedin.com/in/ander428",
+      name: "LinkedIn",
+      text: "ander428",
       link: "https://www.linkedin.com/in/ander428/",
       icon: "fab fa-linkedin fa-2x"
-    }
+    },
+    {
+      id: "a",
+      name: "Email",
+      text: "ander428@mail.chapman.edu",
+      link: "mailto:ander428@mail.chapman.edu",
+      icon: "fas fa-envelope-square fa-2x"
+    },
   ],
   PORTFOLIO: {
     PERSONAL: [
@@ -56,7 +60,7 @@ export const constants = {
         link:
           "https://github.com/ander428/Personal-Website/tree/master/",
         description:
-          "This website is a React.js project that replaces my old HTML/CSS site. It uses technologies " +
+          "This website is made from scratch as a React.js project that replaces my old HTML/CSS site. It uses technologies " +
           "such as 'Hooks', React-Router and Material-UI on React v16. I was inspired to take on this task to improve " +
           "my web development skills and better learn React.js"
       },
@@ -91,7 +95,7 @@ export const constants = {
         dev: "Python",
         link: "https://github.com/ander428/Denver-Crime",
         description:
-          "This project was my final project for my machine learning course. The goal of this program is to predict crimes in Denver, CO " +
+          "This project was my final project for my undergraduate machine learning course. The goal of this program is to predict crimes in Denver, CO " +
           "based on neighborhoods using three machine learning algorithms: HAC, DBSCAN, and a first order Markov model. " +
           "I was responsible for implementing the Markov model and graphing data on a map. The model uses all 400,000 data points with the most previous crime " +
           "as a point of reference."
@@ -103,7 +107,7 @@ export const constants = {
         dev: "R",
         link: "https://github.com/ander428/StanfordMSA",
         description:
-          "An in depth analysis of mass shootings in America from 1966 to 2016, final project for MGSC 310 using the Stanford_MSA_Database. This project " +
+          "An in depth analysis of mass shootings in America from 1966 to 2016, final project for my undergraduate statistical models course using the Stanford_MSA_Database. This project " +
           "uses the programming language R and implements three machine learning algorithms: ElasticNet, RandomForest, and K-Means Clustering to find significant " +
           "factors that affect the number of victims in a given mass shooting in America."
       },
@@ -131,9 +135,6 @@ export const constants = {
           "project where where my main responsibility was creating 3D assets and split level design."
       }
     ]
-  },
-  ICONS: {
-    info: <i className="fas fa-info-circle" />
   },
   GLOBAL_VARS: {
     windowSize: 1350
