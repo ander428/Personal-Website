@@ -12,8 +12,8 @@ const styles = theme => ({
     // backgroundImage:"url('/imgs/background_home.png')",
   },
   contentNotMobile: {
-    marginTop: 24,
-    marginBottom: 24
+    // marginTop: 24,
+    // marginBottom: 24
   },
   contentMobile: {
     marginTop: 100,
