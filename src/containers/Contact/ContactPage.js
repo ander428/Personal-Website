@@ -1,10 +1,8 @@
 import React from "react";
 import styles from "./ContactPage.styles.js";
-import { Paper, Grid, withStyles, Button, TextField } from "@material-ui/core";
-import { defaultTheme } from "../../utils/Themes/Default";
+import { withStyles } from "@material-ui/core";
 import { constants } from "../../utils/constants";
 import Header from "../../components/Header/Header.js";
-import classNames from 'classnames';
 import ContactForm from "../../components/ContactForm/ContactForm.js";
 import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
 
@@ -12,7 +10,7 @@ const ContactPage = props => {
   const { classes } = props;
 
   const buttonLink = "contactForm";
-  const profileImg = <img className={classes.profileImg} src={constants.HOME.profile} />
+  const profileImg = <img className={classes.profileImg} alt="" src={constants.HOME.profile} />
 
   return (
     <div className={"page"}>
