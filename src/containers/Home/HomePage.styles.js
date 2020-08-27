@@ -8,8 +8,6 @@ const styles = theme => ({
     right: 0,
     bottom: 0,
     zIndex: 0,
-    maxHeight: "65vh",
-    // backgroundImage:"url('/imgs/background_home.png')",
   },
   contentNotMobile: {
     // marginTop: 24,

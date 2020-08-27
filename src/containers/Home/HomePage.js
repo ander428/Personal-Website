@@ -47,11 +47,11 @@ const HomePage = props => {
           {description}
         </div>
       : <div className={classes.contentNotMobile}>
-        <div className="d-flex bd-highlight mb-3 justify-content-center">
-          <div className="p-2 bd-highlight col-example" style={{width: '50%'}}>
-            {description}
+          <div className="d-flex mb-3 justify-content-center">
+            <div className="p-2" style={{width: '50%'}}>
+              {description}
+            </div>
           </div>
-        </div>
       </div>
       } 
       </div>
