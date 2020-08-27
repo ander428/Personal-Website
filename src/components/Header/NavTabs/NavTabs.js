@@ -25,7 +25,7 @@ function LinkTab(props) {
 
 const NavTabs = props => {
     const classes = useStyles();
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = React.useState(props.tabValue);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -38,14 +38,14 @@ const NavTabs = props => {
             </div>
             <div>
                 <Tabs
-                variant="fullWidth"
-                value={props.tabValue}
-                onChange={handleChange}
-                classes={{
-                    root: classes.root,
-                    flexContainer: classes.flex,
-                }}
-                centered>
+                    variant="fullWidth"
+                    value={value}
+                    onChange={handleChange}
+                    classes={{
+                        root: classes.root,
+                        flexContainer: classes.flex,
+                    }}
+                    centered>
                     {constants.MENU.map(tab => (
                         <LinkTab
                             key={tab.id}
