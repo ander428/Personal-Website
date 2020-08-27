@@ -73,7 +73,7 @@ const Header = props => {
             )
             :  (
             <div className={classes.header}>
-                <NavTabs className={classes.align} tabValue={props.tabValue} />
+                <NavTabs tabValue={props.tabValue} />
                 <img src={props.src} className={classes.background}/>
                 <div className={classes.contentAlign} />
                 <div>

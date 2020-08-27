@@ -16,7 +16,7 @@ const styles = theme => ({
     // marginBottom: 24
   },
   contentMobile: {
-    marginTop: 100,
+    // marginTop: 100,
     width: "100%"
   },
   title: {
@@ -25,56 +25,12 @@ const styles = theme => ({
     marginRight: "auto",
     transition: theme.transition
   },
-  paragraph: {
-    marginTop: 0,
-    marginLeft: "auto",
-    marginRight: "auto",
-    transition: theme.transition
-  },
-  bottomLine: {
-    marginLeft: "auto",
-    marginRight: "auto",
-    width: "25%",
-    borderBottom: theme.border
-  },
-  gridItemNotMobile: {
-    width: "50%",
-    marginTop: "auto",
-    marginBottom: "auto",
-    float: "left"
-  },
-  gridItemMobile: {
-    marginLeft: "auto",
-    marginRight: "auto",
-    width: "90%",
-    marginTop: "5%",
-    marginBottom: "5%"
-  },
-  imgMobile: {
-    marginLeft: "auto",
-    marginRight: "auto",
-    width: "250px",
-  },
-  imgNotMobile: {
-    marginLeft: "auto",
-    marginRight: "auto",
-    width: "400px",
-  },
   pMobile: {
     fontSize: "25px"
   },
   pNotMobile: {
     fontSize: "25px",
     textAlign: "justify"
-  },
-  email: {
-    textDecoration: "none",
-    color: "white",
-    fontSize: 25,
-    "&:hover": {
-      textDecoration: "none",
-      color: colors.BLACK
-    }
   },
   link: {
     textDecoration: "none",

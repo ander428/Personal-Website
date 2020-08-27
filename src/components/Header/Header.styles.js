@@ -1,9 +1,6 @@
 import { makeStyles, createStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => createStyles({
-    align: {
-        zIndex: 1
-    },
     background: {
         width: "100%",
         position: "absolute",
