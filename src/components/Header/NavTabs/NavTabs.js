@@ -53,7 +53,8 @@ const NavTabs = props => {
                             key={tab.id}
                             style={{color: "lightgrey", textDecoration: "none"}}
                             label={<span className={classes.label}>{tab.title}</span>}
-                            href={tab.url}
+                            href={(tab.title === "Resume" ? "" : "/#") +
+                            tab.url}
                             {...a11yProps(tab.id)}
 
                         />
