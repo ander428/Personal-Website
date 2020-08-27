@@ -39,13 +39,13 @@ const NavTabs = props => {
             <div>
                 <Tabs
                 variant="fullWidth"
-                value={value}
+                value={props.tabValue}
                 onChange={handleChange}
                 classes={{
                     root: classes.root,
                     flexContainer: classes.flex,
                 }}
-                value={props.tabValue}>
+                centered>
                     {constants.MENU.map(tab => (
                         <LinkTab
                             key={tab.id}

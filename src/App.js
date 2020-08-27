@@ -4,7 +4,6 @@ import { HashRouter as Router } from "react-router-dom";
 import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import { defaultTheme } from "./utils/Themes/Default";
 import Routes from "./components/Routes/Routes";
-import Header from "./components/Header/Header";
 
 class App extends Component {
   render() {
