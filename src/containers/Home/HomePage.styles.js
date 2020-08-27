@@ -12,8 +12,8 @@ const styles = theme => ({
     // backgroundImage:"url('/imgs/background_home.png')",
   },
   contentNotMobile: {
-    marginTop: 25,
-    marginBottom: 25
+    marginTop: 24,
+    marginBottom: 24
   },
   contentMobile: {
     marginTop: 100,
@@ -66,20 +66,6 @@ const styles = theme => ({
   pNotMobile: {
     fontSize: "25px",
     textAlign: "justify"
-  },
-  paper: {
-    position: "relative",
-    boxShadow:
-      "inset 0 -0.1em 0.1em rgba(0, 0, 0, 0.25)," +
-      " inset 0 0.2em 0.2em rgba(0, 0, 0, 0.25)",
-    width: "90%",
-    height: "min-content",
-    padding: "15px",
-    borderRadius: "10px",
-    margin: "auto",
-    justifyContent: "center",
-    textAlign: "center",
-    backgroundColor: colors.CHAPMAN_RED
   },
   email: {
     textDecoration: "none",
