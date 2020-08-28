@@ -41,6 +41,7 @@ const NavTabs = props => {
                 classes={{
                     root: classes.root,
                     flexContainer: classes.flex,
+                    scroller: classes.scroller
                 }}
                 centered>
                 {constants.MENU.map(tab => (

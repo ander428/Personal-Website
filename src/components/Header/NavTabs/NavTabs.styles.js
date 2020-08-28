@@ -18,8 +18,11 @@ const useStyles = makeStyles((theme) => createStyles({
     width: "50%"
   },
   flex: {
-    // height: "inherit",
+    height: "100%",
     width: "100%"
+  },
+  scroller: {
+    height: "10vh"
   },
   label: {
     fontSize: 18,
