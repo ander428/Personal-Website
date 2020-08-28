@@ -17,10 +17,6 @@ const useStyles = makeStyles((theme) => createStyles({
     height: "10vh",
     width: "50%"
   },
-  flex: {
-    height: "100%",
-    width: "100%"
-  },
   scroller: {
     height: "10vh"
   },
@@ -33,7 +29,11 @@ const useStyles = makeStyles((theme) => createStyles({
     top: 0,
     left: 0,
     width: "100%",
-  }
+  },
+  flex: {
+    height: "100%",
+    width: "100%"
+  },
 
 
 }));

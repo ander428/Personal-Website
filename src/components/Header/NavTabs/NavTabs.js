@@ -40,8 +40,8 @@ const NavTabs = props => {
                 onChange={handleChange}
                 classes={{
                     root: classes.root,
-                    flexContainer: classes.flex,
-                    scroller: classes.scroller
+                    scroller: classes.scroller,
+                    flexContainer: classes.flex
                 }}
                 centered>
                 {constants.MENU.map(tab => (
