@@ -34,29 +34,27 @@ const NavTabs = props => {
     return (
         <div>
             <p className={classes.name}>JOSHUA ANDERSON</p>
-            <div>
-                <Tabs
-                    variant="fullWidth"
-                    value={value}
-                    onChange={handleChange}
-                    classes={{
-                        root: classes.root,
-                        flexContainer: classes.flex,
-                    }}
-                    centered>
-                    {constants.MENU.map(tab => (
-                        <LinkTab
-                            key={tab.id}
-                            style={{color: "lightgrey", textDecoration: "none"}}
-                            label={<span className={classes.label}>{tab.title}</span>}
-                            href={(tab.title === "Resume" ? "" : "/#") +
-                            tab.url}
-                            {...a11yProps(tab.id)}
+            <Tabs
+                variant="fullWidth"
+                value={value}
+                onChange={handleChange}
+                classes={{
+                    root: classes.root,
+                    flexContainer: classes.flex,
+                }}
+                centered>
+                {constants.MENU.map(tab => (
+                    <LinkTab
+                        key={tab.id}
+                        style={{color: "lightgrey", textDecoration: "none"}}
+                        label={<span className={classes.label}>{tab.title}</span>}
+                        href={(tab.title === "Resume" ? "" : "/#") +
+                        tab.url}
+                        {...a11yProps(tab.id)}
 
-                        />
-                    ))}
-                </Tabs>
-            </div>
+                    />
+                ))}
+            </Tabs>
         </div>
     );
 };
