@@ -12,34 +12,32 @@ const HomePage = props => {
   const description = (
   <div className={classes.text}>
     <p>I am a current graduate student working towards a </p>
-    <a href={"https://catalog.chapman.edu/preview_program.php?catoid=18&poid=3368&returnto=862"} 
+    <p>
+      <a href={"https://catalog.chapman.edu/preview_program.php?catoid=18&poid=3368&returnto=862"}
         className={classes.link}>
-      M.S. in Computational and Data Sciences
-    </a>
-    <p>at Chapman University in Orange, CA</p>
+        M.S. in Computational and Data Sciences
+      </a>
+      <br />
+      at Chapman University in Orange, CA
+    </p>
     <p>
       With endless amounts of data now available, I strive to learn and utilize statistical methods
       to attack big data problems through well-supported research tasks. I aim to gain experience in both
       industry and academia to cover relavent topics in my field.
     </p>
-    
   </div>)
 
   return (
     <div className={"page"}
          style={{overflow: "auto"}}
     >
-       {/* header component */}
       <Header 
         src={"/imgs/background_home.png"} 
         tabValue={0} 
         title={"HELLO WORLD!"} 
         button={"About Me"}
-        link={buttonLink}/>
-
+        link={buttonLink} />
       <SocialButtons />
-
-      {/* About me section */}
       <h2 style={{ color: 'black', marginTop: '10vh' }} id={buttonLink}>ABOUT ME</h2>
       {isMobile ? 
         <div className={classes.contentMobile}>
