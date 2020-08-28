@@ -7,6 +7,14 @@ import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
 const HomePage = props => {
   const { classes } = props;
   const buttonLink = "AboutMeHeader";
+  const [refresh, setRefresh] = React.useState(false)
+
+  const refresh = () => {
+    if(!refresh) {
+      window.location.reload(false)
+      setRefresh(true)
+    }
+  }
 
   const description = (
   <div className={classes.text}>
@@ -27,6 +35,7 @@ const HomePage = props => {
   </div>)
 
   return (
+    
     <div className={"page"}
          style={{overflow: "auto"}}
     >
