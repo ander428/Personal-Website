@@ -8,17 +8,21 @@ import SocialButtons from "../../components/SocialButtons/SocialButtons";
 
 const PortfolioPage = props => {
   const { classes } = props;
+
+  const ref = React.createRef();
+
   return (
     <div className={"page"}>
       <Header 
         src={"/imgs/background_portfolio.png"} 
         tabValue={1}
+        title={"PORTFOLIO"}
         button={"View Portfolio"}
-        title={"PORTFOLIO"} />
+        reference={ref} />
         
       <SocialButtons />
 
-      <h2 className={classes.title}>PERSONAL PROJECTS</h2>
+      <h2 className={classes.title} ref={ref}>PERSONAL PROJECTS</h2>
       <div className={classes.gallery}>
         <Gallery data={constants.PORTFOLIO.PERSONAL} />
       </div>

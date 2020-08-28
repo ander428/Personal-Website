@@ -22,6 +22,15 @@ const Header = props => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
 
+    const ref = props.reference;
+
+    const handleRef = () => {
+        ref.current.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    }
+
     const handleDrawerOpen = () => {
         setOpen(true);
     };
@@ -87,7 +96,7 @@ const Header = props => {
                     <div style={{ paddingTop: 10 }}>
                         <Button 
                             variant="outlined" 
-                            href={"#" + props.link}
+                            onClick={handleRef}
                             className={classes.button}>
                                 {props.button}
                         </Button>

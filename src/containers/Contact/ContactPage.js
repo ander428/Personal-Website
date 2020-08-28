@@ -8,8 +8,8 @@ import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
 
 const ContactPage = props => {
   const { classes } = props;
+  const ref = React.createRef();
 
-  const buttonLink = "contactForm";
   const profileImg = <img className={classes.profileImg} alt="" src={constants.HOME.profile} />
 
   return (
@@ -19,7 +19,7 @@ const ContactPage = props => {
         tabValue={3}
         title={"CONTACT ME"}
         button={"Send Message"}
-        link={buttonLink} />
+        reference={ref} />
 
       <SocialButtons />
 
@@ -41,7 +41,7 @@ const ContactPage = props => {
         </div>
       </div>
       
-      <div id={buttonLink}>
+      <div ref={ref}>
         <ContactForm />
       </div>
       

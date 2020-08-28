@@ -6,7 +6,8 @@ import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
 
 const HomePage = props => {
   const { classes } = props;
-  const buttonLink = "AboutMeHeader";
+
+  const ref = React.useRef();
 
   const description = (
   <div className={classes.text}>
@@ -35,9 +36,9 @@ const HomePage = props => {
         tabValue={0} 
         title={"HELLO WORLD!"} 
         button={"About Me"}
-        link={buttonLink} />
+        reference={ref} />
       <SocialButtons />
-      <h2 style={{ color: 'black', marginTop: '10vh' }} id={buttonLink}>ABOUT ME</h2>
+      <h2 style={{ color: 'black', marginTop: '10vh' }} ref={ref}>ABOUT ME</h2>
       <div style={{width: '50%', margin: 'auto'}}>
         {description}
       </div>
