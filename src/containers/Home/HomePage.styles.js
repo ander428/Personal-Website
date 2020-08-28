@@ -1,13 +1,6 @@
 import { colors } from "../../utils/Themes/values";
 
 const styles = theme => ({
-  text: {
-    fontSize: 18,
-    color: colors.TEXT,
-    "& p": {
-      color: colors.TEXT
-    }
-  },
   background: {
     position: "absolute",
     top: 0,
@@ -25,6 +18,13 @@ const styles = theme => ({
   pNotMobile: {
     fontSize: "25px",
     textAlign: "justify"
+  },
+  text: {
+    fontSize: 18,
+    color: colors.TEXT,
+    "& p": {
+      color: colors.TEXT
+    }
   },
   link: {
     textDecoration: "none",
