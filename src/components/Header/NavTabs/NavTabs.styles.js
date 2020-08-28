@@ -1,7 +1,6 @@
 import { makeStyles, createStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles((theme) => createStyles({
-  empty: {},
   name: {
     position: "absolute",
     top: 0,
@@ -10,6 +9,7 @@ const useStyles = makeStyles((theme) => createStyles({
     textDecoration: "none!important",
     padding: 20
   },
+  empty: {},
   root: {
     position: "absolute",
     top: 0,
