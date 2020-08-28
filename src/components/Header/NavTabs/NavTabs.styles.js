@@ -10,7 +10,8 @@ const useStyles = makeStyles((theme) => createStyles({
     width: "60%"
   },
   flex: {
-    height: "100%"
+    height: "100%",
+    width: "100%"
   },
   label: {
     fontSize: 20
@@ -19,8 +20,6 @@ const useStyles = makeStyles((theme) => createStyles({
     position: "absolute",
     top: 0,
     left: 0,
-    paddingTop: 20,
-    paddingLeft: 25,
     color: "lightgrey", 
     textDecoration: "none"
   },
