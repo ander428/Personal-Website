@@ -13,7 +13,7 @@ const useStyles = createUseStyles({
     },
     header: {
         height: "80vh",
-        boxShadow: "inset 0 -0.1em 0.5em rgba(0, 0, 0, 0.5), inset 0 0.2em 0.2em rgba(0, 0, 0, 0.1)"
+        boxShadow: "inset 0 -0.1em 0.5em rgba(0, 0, 0, 0.5), inset 0 0.2em 0.2em rgba(0, 0, 0, 0.2)"
     },
     contentAlign: {
         paddingTop: "30vh",

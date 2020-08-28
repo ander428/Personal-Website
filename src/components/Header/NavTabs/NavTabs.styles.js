@@ -26,7 +26,7 @@ const useStyles = createUseStyles({
   },
   label: {
     fontSize: 18,
-    color: "lightgrey", 
+    color: "lightgrey",
   },
   background: {
     position: "absolute",

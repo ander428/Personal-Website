@@ -74,7 +74,8 @@ const Header = props => {
             :  (
             <div className={classes.header}>
                 <NavTabs tabValue={props.tabValue} />
-                <img src={props.src} alt="" className={classes.background}/>
+                
+                <img src={props.src} alt="" className={classes.background} />
                 <div className={classes.contentAlign} />
                 <div>
                     <h2 className={classNames({
