@@ -46,6 +46,7 @@ const NavTabs = props => {
                 centered>
                 {constants.MENU.map(tab => (
                     <LinkTab
+                        className={classes.tab}
                         key={tab.id}
                         label={<span className={classes.label}>{tab.title}</span>}
                         href={(tab.title === "Resume" ? "" : "/#") +
