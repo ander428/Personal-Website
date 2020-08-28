@@ -36,7 +36,8 @@ const useStyles = makeStyles((theme) => createStyles({
   flex: {
     height: "100%",
     width: "100%",
-    right: 0
+    right: 0,
+    overflowX: "visible !important"
   },
 
 
