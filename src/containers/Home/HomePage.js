@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./HomePage.styles.js";
 import { withStyles } from "@material-ui/core";
-import { isMobile } from "react-device-detect";
 import Header from "../../components/Header/Header";
 import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
 
