@@ -1,8 +1,7 @@
-import { makeStyles } from "@material-ui/styles";
 import { colors } from "../../utils/Themes/values";
 import { createUseStyles } from 'react-jss'
 
-const useStyles = makeStyles((theme) => createUseStyles({
+const useStyles = createUseStyles({
     form: {
         margin: 'auto',
         width: '90%',
@@ -29,6 +28,6 @@ const useStyles = makeStyles((theme) => createUseStyles({
     text: {
         color: colors.TEXT
     }
-}));
+});
 
 export default useStyles;
