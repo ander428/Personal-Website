@@ -1,6 +1,7 @@
-import { makeStyles, createStyles } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/styles";
+import { createUseStyles } from 'react-jss'
 
-const useStyles = makeStyles((theme) => createStyles({
+const useStyles = createUseStyles({
     icon: {
         color: 'grey',
         padding: 15,
@@ -9,6 +10,6 @@ const useStyles = makeStyles((theme) => createStyles({
             color: 'black'
         }
     }
-}));
+});
 
 export default useStyles;

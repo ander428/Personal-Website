@@ -1,6 +1,7 @@
-import { makeStyles, createStyles } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/styles";
+import { createUseStyles } from 'react-jss'
 
-const useStyles = makeStyles((theme) => createStyles({
+const useStyles = makeStyles((theme) => createUseStyles({
   name: {
     position: "absolute",
     top: 0,

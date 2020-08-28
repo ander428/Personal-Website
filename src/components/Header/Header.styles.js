@@ -1,6 +1,7 @@
-import { makeStyles, createStyles } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/styles";
+import { createUseStyles } from 'react-jss'
 
-const useStyles = makeStyles((theme) => createStyles({
+const useStyles = createUseStyles({
     background: {
         width: "100%",
         position: "absolute",
@@ -33,6 +34,6 @@ const useStyles = makeStyles((theme) => createStyles({
         fontSize: 48,
         WebkitTextStroke: "1px dimgrey"
     },
-}));
+});
 
 export default useStyles;
