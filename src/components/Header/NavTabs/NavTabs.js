@@ -18,6 +18,7 @@ function LinkTab(props) {
     return (
             <Tab
                 component="a"
+                style={{textDecoration: "none"}}
                 {...props}
             />
     );

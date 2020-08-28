@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => createStyles({
     top: 0,
     left: 0,
     color: "lightgrey",
-    textDecoration: "none",
+    textDecoration: "none!important",
     padding: 20
   },
   root: {
@@ -15,17 +15,17 @@ const useStyles = makeStyles((theme) => createStyles({
     right: 0,
     paddingRight: 30,
     height: "10vh",
-    width: "50%"
+    width: "50%",
   },
   tab: {
-    // height: "100%"
+    // textDecoration: 'none'
   },
   scroller: {
-    height: "10vh"
+    height: "10vh",
   },
   label: {
     fontSize: 18,
-    color: "lightgrey", textDecoration: "none"
+    color: "lightgrey", 
   },
   background: {
     position: "absolute",
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => createStyles({
   },
   flex: {
     height: "100%",
-    width: "100%"
+    width: "100%",
   },
 
 
