@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => createStyles({
     width: "50%"
   },
   flex: {
-    height: "100%",
+    // height: "inherit",
     width: "100%"
   },
   label: {

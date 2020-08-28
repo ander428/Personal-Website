@@ -19,9 +19,6 @@ const styles = theme => ({
   },
   title: {
     marginBottom: 0,
-    marginLeft: "auto",
-    marginRight: "auto",
-    transition: theme.transition
   },
   pMobile: {
     fontSize: "25px"
