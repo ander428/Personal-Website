@@ -39,19 +39,10 @@ const HomePage = props => {
         link={buttonLink} />
       <SocialButtons />
       <h2 style={{ color: 'black', marginTop: '10vh' }} id={buttonLink}>ABOUT ME</h2>
-      {isMobile ? 
-        <div className={classes.contentMobile}>
-          {description}
-        </div>
-      : <div className={classes.contentNotMobile}>
-          <div className="d-flex mb-3 justify-content-center">
-            <div className="p-2" style={{width: '50%'}}>
-              {description}
-            </div>
-          </div>
+      <div style={{width: '50%', margin: 'auto'}}>
+        {description}
       </div>
-      } 
-      </div>
+    </div>
   );
 };
 

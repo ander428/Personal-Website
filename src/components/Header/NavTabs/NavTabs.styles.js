@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => createStyles({
     width: "50%"
   },
   tab: {
-    height: "100%"
+    // height: "100%"
   },
   scroller: {
     height: "10vh"
