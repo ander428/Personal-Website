@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/styles";
 import { createUseStyles } from 'react-jss'
 
-const useStyles = makeStyles((theme) => createUseStyles({
+const useStyles = createUseStyles({
   name: {
     position: "absolute",
     top: 0,
@@ -43,6 +43,6 @@ const useStyles = makeStyles((theme) => createUseStyles({
   },
 
 
-}));
+});
 
 export default useStyles;

@@ -34,6 +34,7 @@ const NavTabs = props => {
 
     return (
         <div>
+            
             <p className={classes.name}>JOSHUA ANDERSON</p>
             <Tabs
                 variant="fullWidth"
