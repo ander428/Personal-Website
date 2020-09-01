@@ -5,6 +5,7 @@ import { withStyles } from "@material-ui/core";
 import styles from "./PortfolioPage.styles.js";
 import Header from "../../components/Header/Header";
 import SocialButtons from "../../components/SocialButtons/SocialButtons";
+import Footer from "../../components/Footer/Footer";
 
 const PortfolioPage = props => {
   const { classes } = props;
@@ -32,6 +33,7 @@ const PortfolioPage = props => {
         <Gallery data={constants.PORTFOLIO.SCHOOL} style={{float: "left"}}/>
       </div>
       <br />
+      <Footer />
     </div>
   );
 };

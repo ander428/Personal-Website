@@ -5,6 +5,7 @@ import { constants } from "../../utils/constants";
 import Header from "../../components/Header/Header.js";
 import ContactForm from "../../components/ContactForm/ContactForm.js";
 import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
+import Footer from "../../components/Footer/Footer.js";
 
 const ContactPage = props => {
   const { classes } = props;
@@ -44,7 +45,7 @@ const ContactPage = props => {
       <div ref={ref}>
         <ContactForm />
       </div>
-      
+      <Footer />
     </div>
   );
 };

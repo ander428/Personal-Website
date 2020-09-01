@@ -33,6 +33,15 @@ const styles = theme => ({
     "&:hover": {
       color: colors.DARK_SEA_GREEN
     }
+  },
+  h2: {
+    color: 'black', 
+    marginTop: '10vh',
+    marginBottom: '2vh'
+  },
+  h4: {
+    fontStyle: 'italic',
+    color: colors.TEXT,
   }
 });
 
