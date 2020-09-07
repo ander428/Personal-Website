@@ -60,7 +60,7 @@ const ContactForm = props => {
         // }).catch(err => {
         //     console.log('Failed to send feedback. Error: ', err)
         // })
-    }
+    // }
     
     return(
         <div className={classes.messageBox}>
