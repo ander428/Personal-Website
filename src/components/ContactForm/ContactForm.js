@@ -67,19 +67,17 @@ const ContactForm = props => {
             <h2 className={classes.text}>CONTACT</h2>
             <h6 className={classes.text}>Please fill out this form to contact me via email.</h6>
             <div className="d-flex flex-column justify-content-center"></div>
-            <form className={classes.form} onSubmit={}>
+            <form className={classes.form}>
                 <div className="p-2 col-example text-left" >
                     <TextField
                         className={classes.textInput}
                         label={"First Name"}
                         variant={"outlined"}
-                        onChange={}
                         style={{ width: "50%" }} />
                     <TextField
                         className={classes.textInput}
                         label={"Last Name"}
                         variant={"outlined"}
-                        onChange={}
                         style={{ width: "50%" }} />
                 </div>
                 <div className={"p-2 col-example text-left"}>
@@ -95,8 +93,7 @@ const ContactForm = props => {
                         multiline 
                         rows={5} 
                         label={"Message"} 
-                        variant={"outlined"}
-                        onChange={} />
+                        variant={"outlined"} />
                 </div>
                 <div className={"p-2 col-example text-center"}>
                     <Button className={classes.button} type={"submit"}>Send</Button>
