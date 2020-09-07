@@ -53,6 +53,19 @@ export const constants = {
   PORTFOLIO: {
     PERSONAL: [
       {
+        name: "COVID-19 Personal Research",
+        image: "/imgs/portfolio/COVID-19.jpg",
+        topic: "Data Science",
+        dev: "Python/Jupyter Notebook",
+        link: "https://ander428.github.io/JohnsHopkins_COVID-19/",
+        description: 
+        "I created a github pages site that is a compilation of my analysis on the Johns Hopkins COVID-19 database. " +
+        "30 different variables were used to observe relating to the pandemic in both the US and as well as some internationally. " +
+        "Technologies such as Jupyter Notebook, Github Pages, scikit-learn, and Bokeh were used. All data sources are well citeed." +
+        "Currently this project consists of descriptive analytics along with documentation. I plan on adding predictive/causal " +
+        "analytics in the future."
+      },
+      {
         name: "This website",
         image: "/imgs/portfolio/PW.jpeg",
         topic: "Web Development",
@@ -91,7 +104,7 @@ export const constants = {
       {
         name: "Denver Crime",
         image: "/imgs/portfolio/DensityMap.png",
-        topic: "Machine Learning",
+        topic: "Data Science",
         dev: "Python",
         link: "https://github.com/ander428/Denver-Crime",
         description:
@@ -103,7 +116,7 @@ export const constants = {
       {
         name: "Stanford MSA",
         image: "/imgs/portfolio/MSA.png",
-        topic: "Machine Learning",
+        topic: "Data Science",
         dev: "R",
         link: "https://github.com/ander428/StanfordMSA",
         description:

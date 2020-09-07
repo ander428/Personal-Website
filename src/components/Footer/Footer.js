@@ -17,7 +17,7 @@ const Footer = props => {
                             M.S. Computational and Data Sciences
                     </div>
                         <div className="p-2 bd-highlight" style={{ width: '40%' }}>
-                            Schmid College of Science and Technology
+                            Chapman University
                     </div>
                     </div>
                 </div>
