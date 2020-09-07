@@ -84,8 +84,7 @@ const ContactForm = props => {
                     <TextField 
                         className={classes.textInput} 
                         label={"Email"} 
-                        variant={"outlined"}
-                        onChange={} />
+                        variant={"outlined"} />
                 </div>
                 <div className={"p-2 col-example text-left"}>
                     <TextField 
