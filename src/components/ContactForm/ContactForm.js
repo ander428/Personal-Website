@@ -4,22 +4,22 @@ import {
     TextField,
     Button 
 } from '@material-ui/core';
-import { constants } from "../../utils/constants"
+// import { constants } from "../../utils/constants"
 import emailjs from 'emailjs-com';
 
 const ContactForm = props => {
     const classes = useStyles();
 
-    const [firstName, setFirstName] = React.useState("");
-    const [lastName, setLastName] = React.useState("");
-    const [senderEmail, setEmail] = React.useState("");
-    const [message, setMessage] = React.useState("");
-    const [sent, setSent] = React.useState(false);
+    // const [firstName, setFirstName] = React.useState("");
+    // const [lastName, setLastName] = React.useState("");
+    // const [senderEmail, setEmail] = React.useState("");
+    // const [message, setMessage] = React.useState("");
+    // const [sent, setSent] = React.useState(false);
 
-    const templateParams = {
-        name: "Joshua Anderson",
-        feedback: "test"
-    }
+    // const templateParams = {
+    //     name: "Joshua Anderson",
+    //     feedback: "test"
+    // }
     var service_id = "default_service";
     var template_id = "template_YYrpbC3s";
     // const receiverEmail = constants.CONTACT[2].text;
