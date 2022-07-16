@@ -1,6 +1,6 @@
 const styles = theme => ({
   gallery: {
-    height: "50%",
+    height: "35%",
     width: "75%",
     margin: "auto"
   },

@@ -13,6 +13,16 @@ const HomePage = props => {
   const description = (
   <div className={classes.text}>
     <p>I am a current graduate student working towards a </p>
+        <p>
+      <a href={"https://www.isp.pitt.edu/academics/doctor-philosophy-intelligent-systems"}
+        className={classes.link}>
+        Ph.D. in Intelligent Systems
+      </a>
+      <br />
+      at University of Pittsburgh in Pittsburgh, PA
+    </p>
+
+    <p>Recently, I finished a degree in </p>
     <p>
       <a href={"https://catalog.chapman.edu/preview_program.php?catoid=18&poid=3368&returnto=862"}
         className={classes.link}>
@@ -24,9 +34,43 @@ const HomePage = props => {
     <p>
       With endless amounts of data now available, I strive to learn and utilize statistical methods
       to attack big data problems through well-supported research tasks. I aim to gain experience in both
-      industry and academia to cover relavent topics in my field.
+      industry and academia to cover relavent topics in my field. My focus is in the medical research. 
+      Using methods in statistics, artificial Intelligence, and causal inference, I research
+      methods and applications that reduce bias and increase interpretability for open and explainable
+      AI in the medical field.
     </p>
   </div>);
+
+  const PITT_LAB = (
+    <div>
+      <h4 className={classes.h4}>Intelligent Computing for Clinical Imaging (ICCI) Lab</h4>
+      <p className={classes.text}>
+        <a href={"http://www.rad.pitt.edu/imaging-research-lab.html"} className={classes.link}>ICCI </a>
+        is a radiological research lab at University of Pittsburgh invoved in a number of projects concerning medical 
+        imaging with the goal of improving evaluations and imaging procedures in a clinical environment. The lab has been involved 
+        in a number of projects collaberating with the women's imaging division.<br /><br />My role in the lab is to research
+        ways to make machine learning in medical imaging more interpretable and reduce bias in estimates. My advisor
+        is <a href={"http://www.rad.pitt.edu/profile-detail.html?profileID=906"} className={classes.link}> Dr. Shandong Wu </a>,
+        an associate Professor of Radiology, Biomedical Informatics, Bioengineering, Intelligent Systems, Computer Science, 
+        Clinical and Translational Science at University of Pittsburgh.
+    </p>
+    </div>);
+
+  const CHAP_LAB = (
+    <div>
+      <h4 className={classes.h4}>Hersh Lab</h4>
+      <p className={classes.text}>
+        <a href={"https://www.chapman.edu/our-faculty/jonathan-hersh"} className={classes.link}>Hersh Lab </a>
+        is a economics and data science research lab at Chapman University led by Dr. Jonathan Hersh invoved in
+        a number of projects concerning global development. The lab frequently collaberates with the 
+        <a href="https://www.worldbank.org/en/home" className={classes.link}> World Bank </a>
+        in a number of projects related to economic growth in third world countries. <br /><br />Working in this lab from 2020-2022,
+        my role was to research open source data to develop a vulnerability index in sub-Saharan Africa. Through this lab
+        I gained experience in working with unstructured GIS data using tools such as
+        <a href="https://geopandas.org/en/stable/" className={classes.link}> Geopandas</a> and 
+        <a href="https://r-spatial.github.io/sf/" className={classes.link}> Simple Features</a> libraries in Python and R respectively.
+    </p>
+    </div>);
 
   const IV = (
     <div>
@@ -50,9 +94,9 @@ const HomePage = props => {
         <a href={"https://github.com/ChapmanDAA"} className={classes.link}>Data Analytics Association</a> is a professional club at Chapman University that was founded in Fall 2019.
         I took on the role of Internal VP in Spring 2020 being responsible for designing posters and flyers, 
         planning bi-weekly meetings, creating schedule and timing breakdowns for bi-weekly meetings, as well
-        as seek opportunities for internal events.<br /><br />For the 2020-21 academic year, I am serving as the club
+        as seek opportunities for internal events.<br /><br />From 2019-2022, I served as a VP and later the club
         president taking on administrative responsibilities as well as running the executive team alongside
-        our faculty advidsor.
+        our faculty advisor. 
       </p>
     </div>
   );
@@ -71,6 +115,14 @@ const HomePage = props => {
         {description}
       </div>
       <h2 className={classes.h2}>CAMPUS INVOLVEMENT</h2>
+      <div className="d-flex bd-highlight mb-3 justify-content-center">
+        <div className="p-2 bd-highlight" style={{ width: '40%' }}>
+          {PITT_LAB}
+        </div>
+        <div className="p-2 bd-highlight" style={{ width: '40%' }}>
+          {CHAP_LAB}
+        </div>
+      </div>
       <div className="d-flex bd-highlight mb-3 justify-content-center">
         <div className="p-2 bd-highlight" style={{ width: '40%' }}>
           {IV}

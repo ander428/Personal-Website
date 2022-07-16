@@ -23,6 +23,11 @@ const PortfolioPage = props => {
         
       <SocialButtons />
 
+      <h2 className={classes.title} ref={ref}>HIGHLIGHTS</h2>
+      <div className={classes.gallery}>
+        <Gallery data={constants.PORTFOLIO.HIGHLIGHTS} />
+      </div>
+      <br />
       <h2 className={classes.title} ref={ref}>PERSONAL PROJECTS</h2>
       <div className={classes.gallery}>
         <Gallery data={constants.PORTFOLIO.PERSONAL} />

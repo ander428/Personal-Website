@@ -45,13 +45,34 @@ export const constants = {
     {
       id: "a",
       name: "Email",
-      text: "ander428@mail.chapman.edu",
-      link: "mailto:ander428@mail.chapman.edu",
+      text: "jwa45@pitt.edu",
+      link: "mailto:jwa45@pitt.edu",
       icon: "fas fa-envelope-square fa-2x"
     },
   ],
   PORTFOLIO: {
-    PERSONAL: [
+    HIGHLIGHTS: [
+      {
+        name: "CausalModels: An R Library for Estimating Causal Effects",
+        image: "/imgs/portfolio/CADS.png",
+        topic: "Statistical Software",
+        dev: "R",
+        link: "https://linktr.ee/ander428",
+        description: 
+        "Free and open source software for statistical modeling and machine learning have" +
+        "advanced productivity in data science significantly. Packages such as SciPy in Python and" +
+        "caret in R provide fundamental tools for statistical modeling and machine learning in the" +
+        "two most popular programming languages used by data scientists. However, similar tools" +
+        "for causal inference in R are currently limited. The existing capabilities lack consistent" +
+        "and standardized methodologies and inputs. R lacks a comprehensive package that offers" +
+        "traditional causal inference methods such as standardization, IP weighting, G-estimation," +
+        "outcome regression, and propensity scores in one common package. CausalModels is meant" +
+        "to fill the gap in open source software concerning causal inference. It covers tools for all" +
+        "of the above-mentioned methods providing accounting for biases in observational data" +
+        "without requiring extensive statistical knowledge from the user. CausalModels creates a" +
+        "foundation by implementing popular fundamental methods and excludes more advanced" +
+        "methods that may be added over time."
+      },
       {
         name: "COVID-19 Personal Research",
         image: "/imgs/portfolio/COVID-19.jpg",
@@ -65,6 +86,19 @@ export const constants = {
         "Currently this project consists of descriptive analytics along with documentation. I plan on adding predictive/causal " +
         "analytics in the future."
       },
+            {
+        name: "Stanford MSA",
+        image: "/imgs/portfolio/MSA.png",
+        topic: "Data Science",
+        dev: "R",
+        link: "https://github.com/ander428/StanfordMSA",
+        description:
+          "An in depth analysis of mass shootings in America from 1966 to 2016, final project for my undergraduate statistical models course using the Stanford_MSA_Database. This project " +
+          "uses the programming language R and implements three machine learning algorithms: ElasticNet, RandomForest, and K-Means Clustering to find significant " +
+          "factors that affect the number of victims in a given mass shooting in America."
+      },
+    ],
+    PERSONAL: [
       {
         name: "This website",
         image: "/imgs/portfolio/PW.jpeg",
@@ -112,17 +146,6 @@ export const constants = {
           "based on neighborhoods using three machine learning algorithms: HAC, DBSCAN, and a first order Markov model. " +
           "I was responsible for implementing the Markov model and graphing data on a map. The model uses all 400,000 data points with the most previous crime " +
           "as a point of reference."
-      },
-      {
-        name: "Stanford MSA",
-        image: "/imgs/portfolio/MSA.png",
-        topic: "Data Science",
-        dev: "R",
-        link: "https://github.com/ander428/StanfordMSA",
-        description:
-          "An in depth analysis of mass shootings in America from 1966 to 2016, final project for my undergraduate statistical models course using the Stanford_MSA_Database. This project " +
-          "uses the programming language R and implements three machine learning algorithms: ElasticNet, RandomForest, and K-Means Clustering to find significant " +
-          "factors that affect the number of victims in a given mass shooting in America."
       },
       {
         name: "Financial Manager",

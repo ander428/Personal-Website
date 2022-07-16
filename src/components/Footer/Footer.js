@@ -14,10 +14,10 @@ const Footer = props => {
                             Joshua Anderson
                     </div>
                         <div className="p-2 bd-highlight" style={{ width: '40%' }}>
-                            M.S. Computational and Data Sciences
+                            Ph.D Student in Intelligent Systems
                     </div>
                         <div className="p-2 bd-highlight" style={{ width: '40%' }}>
-                            Chapman University
+                            University of Pittsburgh
                     </div>
                     </div>
                 </div>
