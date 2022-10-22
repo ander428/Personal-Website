@@ -14,16 +14,25 @@ const ContactPage = props => {
   const profileImg = <img className={classes.profileImg} alt="" src={constants.HOME.profile} />
 
   return (
-    <div className={"page"}>
-      <Header
-        src={"/imgs/background_contact.png"}
-        tabValue={3}
-        title={"CONTACT ME"}
-        button={"Send Message"}
-        reference={ref} />
-
-      <SocialButtons />
-
+    <div className={"page"} style={{overflow: "hidden"}}>
+      <div className={classes.contentContainer}>
+          <div className={classes.row}>            
+              <div className={classes.leftPanel}>
+                <Header
+                  src={"/imgs/background_image.jpg"}
+                  tabValue={5}
+                  title={(<p style={{position: "relative", top: "-10vh"}}>Contact<br />Me</p>)}
+                  button={"Send Message"}
+                  reference={ref} />
+              </div>            
+              <div className={classes.rightPanel}>
+                  <div className={classes.info}>
+                  </div>
+                <SocialButtons />
+              </div> 
+          </div>
+      </div>
+{/* 
       <div className={classes.contacts}>
         <div className="d-flex bd-highlight mb-3 justify-content-center">
           <div className="p-2 bd-highlight align-self-center col-example" style={{ width: '33%' }}>
@@ -45,8 +54,8 @@ const ContactPage = props => {
       <div ref={ref}>
         <ContactForm />
       </div>
-      <Footer />
-    </div>
+      <Footer />*/}
+    </div> 
   );
 };
 

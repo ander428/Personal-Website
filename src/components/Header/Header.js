@@ -45,19 +45,19 @@ const Header = props => {
             onClick={handleDrawerClose}
             onKeyDown={handleDrawerClose}
         >
-            <List>
-                {constants.MENU.map((tab) => (
-                    <ListItem
-                        button
-                        key={tab.id}
-                        component="a"
-                        href={tab.url}
-                    >
-                        <ListItemText primary={tab.title} />
-                    </ListItem>
-                ))}
-            </List>
-        </div>
+                <List>
+                    {constants.MENU.map((tab) => (
+                        <ListItem
+                            button
+                            key={tab.id}
+                            component="a"
+                            href={tab.url}
+                        >
+                            <ListItemText primary={tab.title} />
+                        </ListItem>
+                    ))}
+                </List>
+            </div>
     );
 
     return(
@@ -82,26 +82,11 @@ const Header = props => {
             )
             :  (
             <div className={classes.header}>
-                <NavTabs tabValue={props.tabValue} />
-                
+                <div className={classes.name}>
+                    {props.title}
+                </div>
                 <img src={props.src} alt="" className={classes.background} />
-                <div className={classes.contentAlign} />
-                <div>
-                    <h2 className={classNames({
-                        [classes.h2Mobile]: isMobile,
-                        [classes.h2NotMobile]: !isMobile
-                    })}>
-                        {props.title}
-                    </h2>
-                    <div style={{ paddingTop: 10 }}>
-                        <Button 
-                            variant="outlined" 
-                            onClick={handleRef}
-                            className={classes.button}>
-                                {props.button}
-                        </Button>
-                    </div>
-                </div>    
+                <NavTabs tabValue={props.tabValue}/>
             </div>)
     );
 }

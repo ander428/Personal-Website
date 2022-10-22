@@ -3,7 +3,7 @@ import "./Gallery.css";
 
 const Panel = props => {
   return (
-    <li style={{ backgroundImage: `url(${props.image})` }}>
+    <li style={{ backgroundImage: `url(${props.image})`, height: "100%" }}>
       <div>
         <a href={props.link}>
           <h5>{props.topic}</h5>

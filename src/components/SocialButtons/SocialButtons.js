@@ -10,8 +10,8 @@ const SocialButtons = props => {
     return(
         <div>
             {/* social media */}
-            <div className="d-flex bd-highlight mb-3 justify-content-center"
-                style={isMobile ? { marginTop: '15vh' } : { marginTop: '5vh' }}>
+            <div className="d-flex bd-highlight justify-content-center"
+                style={isMobile ? { marginTop: '15vh' } : { marginTop: '0vh' }}>
                 {constants.CONTACT.map(contact => (
                     <div className="p-2 bd-highlight col-example" style={{ height: "10%" }} key={contact.id}>
                         <a href={contact.link}>

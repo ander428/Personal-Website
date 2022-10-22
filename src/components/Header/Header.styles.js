@@ -4,17 +4,20 @@ import { createUseStyles } from 'react-jss'
 const useStyles = createUseStyles({
     background: {
         width: "100%",
-        position: "absolute",
-        top: 0,
-        left: 0,
         zIndex: -1,
-        height: "inherit",
-        objectFit: "cover"
+        height: "100vh",
+        objectFit: "cover",
+        webkitFilter: "grayscale(80%)",
+        filter: "grayscale(80%)",
+        opacity: "50%",
+        position: "relative",
+        left: 0,
     },
     header: {
-        height: "80vh",
+        height: "100%",
         boxShadow: "inset 0 -0.1em 0.5em rgba(0, 0, 0, 0.5), inset 0 0.2em 0.2em rgba(0, 0, 0, 0.2)"
     },
+
     contentAlign: {
         paddingTop: "30vh",
     },
@@ -32,8 +35,20 @@ const useStyles = createUseStyles({
     h2NotMobile: {
         textAlign: "center",
         fontSize: 48,
-        WebkitTextStroke: "1px dimgrey"
+        WebkitTextStroke: "1px dimgrey",
+        fontFamily: "Darlington"
     },
+    name: {
+    fontSize: 120, 
+    paddingLeft: "12%",
+    fontFamily: "Darlington", 
+    position: "absolute", 
+    left: 0, 
+    top: "40%",
+    color: "lightgray",
+    // overflow: "hidden",
+    opacity: "100% !important"
+  },
 });
 
 export default useStyles;

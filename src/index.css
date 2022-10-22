@@ -12,3 +12,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: 'Darlington';
+  src: local('Darlington'), url(/fonts/DarlingtonDemo.ttf) format('truetype');
+}

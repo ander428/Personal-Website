@@ -13,32 +13,33 @@ const PortfolioPage = props => {
   const ref = React.createRef();
 
   return (
-    <div className={"page"}>
-      <Header 
-        src={"/imgs/background_portfolio.png"} 
-        tabValue={1}
-        title={"PORTFOLIO"}
-        button={"View Portfolio"}
-        reference={ref} />
-        
-      <SocialButtons />
-
-      <h2 className={classes.title} ref={ref}>HIGHLIGHTS</h2>
-      <div className={classes.gallery}>
-        <Gallery data={constants.PORTFOLIO.HIGHLIGHTS} />
+    <div className={"page"} style={{overflow: "hidden"}}>
+      <div className={classes.contentContainer}>
+          <div className={classes.row}>            
+              <div className={classes.leftPanel}>
+                <Header 
+                  src={"/imgs/background_image.jpg"} 
+                  tabValue={1}
+                  title={"Portfolio"}
+                  reference={ref} />
+              </div>            
+              <div className={classes.rightPanel}>
+                <div className={classes.info}>
+                  <div className={classes.gallery}>
+                    <Gallery data={constants.PORTFOLIO.HIGHLIGHTS} />
+                  </div>
+                  <div className={classes.gallery}>
+                    <Gallery data={constants.PORTFOLIO.PERSONAL} />
+                  </div>
+                  <div className={classes.gallery}>
+                    <Gallery data={constants.PORTFOLIO.SCHOOL}/>
+                  </div>  
+                </div>
+                <p style={{margin: 0}}>Hover and click to learn more!</p>
+                <SocialButtons />
+              </div> 
+          </div>
       </div>
-      <br />
-      <h2 className={classes.title} ref={ref}>PERSONAL PROJECTS</h2>
-      <div className={classes.gallery}>
-        <Gallery data={constants.PORTFOLIO.PERSONAL} />
-      </div>
-      <br />
-      <h2 className={classes.title}>SCHOOL PROJECTS</h2>
-      <div className={classes.gallery}>
-        <Gallery data={constants.PORTFOLIO.SCHOOL} style={{float: "left"}}/>
-      </div>
-      <br />
-      <Footer />
     </div>
   );
 };

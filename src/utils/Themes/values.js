@@ -12,5 +12,6 @@ export const colors = {
   BLACK: "#000",
   CHAPMAN_RED: "#A50034",
   DARK_SEA_GREEN: "#A1C97D",
+  MUI_PRIMARY: "#757ce8",
   TEXT: "#616469"
 };

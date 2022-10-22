@@ -26,7 +26,35 @@ const styles = theme => ({
   },
   contacts: {
     margin: 50
-  }
+  },
+  contentContainer: {
+    height: "100%",
+    width: "100%",
+    fontSize: "20px",
+    color: "black",
+    },
+  box: {
+    border: "1px solid black"
+  },
+  leftPanel: {
+    flex: 4,
+    backgroundColor: "black",
+    zIndex: 0
+  },
+  rightPanel: {
+    flex: 6,
+  },
+  row: {
+    display: "flex",
+    height: "100%",
+    width: "100%",
+        zIndex: -2
+  },
+  info: {
+    width: "100%",
+    height: "90vh",
+    paddingTop: "10vh"
+  },
 });
 
 export default styles;

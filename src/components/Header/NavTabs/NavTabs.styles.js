@@ -7,41 +7,39 @@ const useStyles = createUseStyles({
     left: 0,
     color: "lightgrey",
     textDecoration: "none!important",
-    padding: 20
+    padding: 20,
+    fontFamily: "Darlington",
+    fontSize: 50
   },
   empty: {},
   root: {
     position: "absolute",
-    top: 0,
+    top: "1%",
     right: 0,
     paddingRight: 30,
-    height: "10vh",
-    width: "50%",
-  },
-  tab: {
-    // textDecoration: 'none'
+    height: "6vh",
+    width: "60%",
   },
   scroller: {
-    height: "10vh",
+    height: "6vh",
   },
   label: {
-    fontSize: 18,
-    color: "lightgrey",
-  },
-  background: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
+    fontSize: 18
   },
   flex: {
     height: "100%",
     width: "100%",
-    right: 0,
     overflowX: "visible !important"
   },
-
-
+  "& .indicator": {
+  display: "flex",
+  justifyContent: "center",
+  backgroundColor: "transparent",
+  "& > span": {
+    maxWidth: 40,
+    width: "100%",
+    backgroundColor: "green !important"
+  }},
 });
 
 export default useStyles;

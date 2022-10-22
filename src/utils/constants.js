@@ -1,3 +1,5 @@
+import React from "react";
+
 const url = "www.joshuawanderson.com";
 
 export const constants = {
@@ -17,15 +19,25 @@ export const constants = {
       url: "/portfolio"
     },
     {
+      id: "kG18sdxsUo5pjgUldd",
+      title: "Publications",
+      url: "/publications"
+    },
+    {
+      id: "kT38sasdfaUo5pjgUldd",
+      title: "Teaching",
+      url: "/teaching"
+    },
+    {
       id: "kF68xSAsUo5pjgU5",
-      title: "Resume",
-      url: "/resources/Resume.pdf"
+      title: "CV",
+      url: "/resources/JoshuaAndersonCV.pdf"
     },
     {
       id: "kE28xSEsUo5pjgUl",
       title: "Contact",
       url: "/contact"
-    }
+    },
   ],
   CONTACT: [
     {
@@ -53,25 +65,16 @@ export const constants = {
   PORTFOLIO: {
     HIGHLIGHTS: [
       {
-        name: "CausalModels: An R Library for Estimating Causal Effects",
+        name: "Master's Thesis",
         image: "/imgs/portfolio/CADS.png",
         topic: "Statistical Software",
         dev: "R",
         link: "https://linktr.ee/ander428",
         description: 
-        "Free and open source software for statistical modeling and machine learning have" +
-        "advanced productivity in data science significantly. Packages such as SciPy in Python and" +
-        "caret in R provide fundamental tools for statistical modeling and machine learning in the" +
-        "two most popular programming languages used by data scientists. However, similar tools" +
-        "for causal inference in R are currently limited. The existing capabilities lack consistent" +
-        "and standardized methodologies and inputs. R lacks a comprehensive package that offers" +
-        "traditional causal inference methods such as standardization, IP weighting, G-estimation," +
-        "outcome regression, and propensity scores in one common package. CausalModels is meant" +
-        "to fill the gap in open source software concerning causal inference. It covers tools for all" +
-        "of the above-mentioned methods providing accounting for biases in observational data" +
-        "without requiring extensive statistical knowledge from the user. CausalModels creates a" +
-        "foundation by implementing popular fundamental methods and excludes more advanced" +
-        "methods that may be added over time."
+        "An R library named 'CausalModels' that provides an array of statistical models common in causal inference such as standardization, " +
+        "IP weighting, propensity matching, outcome regression, and doubly-robust estimators. " + 
+        "Estimates of the average treatment effects from each model are given with the standard error and" +
+        "a 95% Wald confidence interval."
       },
       {
         name: "COVID-19 Personal Research",
@@ -82,9 +85,8 @@ export const constants = {
         description: 
         "I created a github pages site that is a compilation of my analysis on the Johns Hopkins COVID-19 database. " +
         "30 different variables were used to observe relating to the pandemic in both the US and as well as some internationally. " +
-        "Technologies such as Jupyter Notebook, Github Pages, scikit-learn, and Bokeh were used. All data sources are well citeed." +
-        "Currently this project consists of descriptive analytics along with documentation. I plan on adding predictive/causal " +
-        "analytics in the future."
+        "Technologies such as Jupyter Notebook, Github Pages, scikit-learn, and Bokeh were used. All data sources are well citeed. " +
+        "Currently this project consists of descriptive analytics along with documentation."
       },
             {
         name: "Stanford MSA",
@@ -170,6 +172,37 @@ export const constants = {
           "they wound up in. Work to complete the obstacles in your way, while avoiding traps, enemies, and being detected by The Tower. The game was a group " +
           "project where where my main responsibility was creating 3D assets and split level design."
       }
+    ]
+  },  
+  PUBLICATIONS: {
+    THESES: [
+      {
+        cite: (<p>J.W. Anderson, "<i>CausalModels</i>: An R Library for Estimating Causal Effects,"
+         M. S. thesis, Chapman University, Orange, CA, 2022. 
+         <a href={"https://doi.org/10.36837/chapman.000379"}> https://doi.org/10.36837/chapman.000379</a></p>)
+      },
+    ]
+  },
+  TEACHING: {
+    TA: [
+      {
+        university: "Chapman University",
+        location: "Orange, CA",
+        course: "Data Structures and Algorithms",
+        terms: "Fall 2021, Spring 2022"
+      },
+      {
+        university: "Chapman University",
+        location: "Online",
+        course: "Machine Learning for Managers",
+        terms: "Fall 2020"
+      },
+      {
+        university: "Chapman University",
+        location: "Online",
+        course: "Statistical Models for Business",
+        terms: "Fall 2020"
+      },
     ]
   },
   GLOBAL_VARS: {
