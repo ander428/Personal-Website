@@ -3,7 +3,6 @@ import styles from "./HomePage.styles.js";
 import { withStyles } from "@material-ui/core";
 import Header from "../../components/Header/Header";
 import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
-import Footer from "../../components/Footer/Footer.js";
 
 const HomePage = props => {
   const { classes } = props;
@@ -46,7 +45,7 @@ const HomePage = props => {
               </div>            
               <div className={classes.rightPanel}>
                   <div className={classes.info}>
-                    <img src={"/imgs/grad.jpg"} className={classes.profile}/>
+                    <img src={"/imgs/grad.jpg"} alt={""} className={classes.profile}/>
                     <div style={{width: '50%', margin: 'auto'}}>
                       {description}
                     </div>

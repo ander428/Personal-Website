@@ -1,11 +1,9 @@
 import React from "react";
-import Gallery from "../../components/Gallery/Gallery";
 import { constants } from "../../utils/constants";
 import { withStyles } from "@material-ui/core";
 import styles from "./TeachingPage.styles.js";
 import Header from "../../components/Header/Header";
 import SocialButtons from "../../components/SocialButtons/SocialButtons";
-import Footer from "../../components/Footer/Footer";
 
 const TeachingPage = props => {
   const { classes } = props;

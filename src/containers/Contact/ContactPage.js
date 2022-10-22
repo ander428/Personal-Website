@@ -1,17 +1,16 @@
 import React from "react";
 import styles from "./ContactPage.styles.js";
 import { withStyles } from "@material-ui/core";
-import { constants } from "../../utils/constants";
+// import { constants } from "../../utils/constants";
 import Header from "../../components/Header/Header.js";
-import ContactForm from "../../components/ContactForm/ContactForm.js";
+// import ContactForm from "../../components/ContactForm/ContactForm.js";
 import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
-import Footer from "../../components/Footer/Footer.js";
 
 const ContactPage = props => {
   const { classes } = props;
   const ref = React.createRef();
 
-  const profileImg = <img className={classes.profileImg} alt="" src={constants.HOME.profile} />
+  // const profileImg = <img className={classes.profileImg} alt="" src={constants.HOME.profile} />
 
   return (
     <div className={"page"} style={{overflow: "hidden"}}>
