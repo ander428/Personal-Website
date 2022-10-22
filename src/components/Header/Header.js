@@ -20,7 +20,7 @@ const Header = props => {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
 
-    const ref = props.reference;
+    // const ref = props.reference;
 
     // const handleRef = () => {
     //     ref.current.scrollIntoView({
