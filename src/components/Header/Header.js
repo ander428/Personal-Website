@@ -1,7 +1,6 @@
 import React from 'react';
 import useStyles from "./Header.styles";
 import NavTabs from './NavTabs/NavTabs';
-import classNames from "classnames";
 import { isMobile } from "react-device-detect";
 import { 
     CssBaseline, 
@@ -11,7 +10,6 @@ import {
     ListItemText,
     Toolbar,
     Drawer,
-    Button,
     IconButton
  } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -24,12 +22,12 @@ const Header = props => {
 
     const ref = props.reference;
 
-    const handleRef = () => {
-        ref.current.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-    }
+    // const handleRef = () => {
+    //     ref.current.scrollIntoView({
+    //         behavior: 'smooth',
+    //         block: 'start'
+    //     })
+    // }
 
     const handleDrawerOpen = () => {
         setOpen(true);
