@@ -16,9 +16,9 @@ const HomePage = props => {
     </p>
     <p>
       I am interested in researching ways to use AI to improve quality of life, fight disease, and ensure better & fair treatment in medicine. 
-      I focus on methods and applications of causal inference, interpretable AI, and generally AI in medicine. Currently, I am working with 
-      <a className={classes.link} href={"https://www.dbmi.pitt.edu/directory/name/shandong-wu/"}> Dr. Shandong Wu </a> in the 
-      Intelligent Computing for Clinical Imaging (ICCI) Lab.
+      I focus on methods and applications of causal inference, interpretable AI, and generally AI in medicine. I am working with 
+      <a className={classes.link} href={"https://www.sci.pitt.edu/people/shyam-visweswaran"}> Dr. Shyam Visweswaran </a> working on clinical
+      decision support as well as bias and fairness in AI.
     </p>
     <p>
       I received both my B.S. in Computer Science and M.S. at Chapman University in Orange, CA in the
