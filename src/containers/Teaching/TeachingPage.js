@@ -4,6 +4,7 @@ import { withStyles } from "@material-ui/core";
 import styles from "./TeachingPage.styles.js";
 import Header from "../../components/Header/Header";
 import SocialButtons from "../../components/SocialButtons/SocialButtons";
+import NavTabs from "../../components/Header/NavTabs/NavTabs";
 
 const TeachingPage = props => {
   const { classes } = props;
@@ -22,6 +23,7 @@ const TeachingPage = props => {
                   reference={ref} />
               </div>        
               <div className={classes.rightPanel}>
+                <NavTabs tabValue={props.tabValue}/>
                 <div className={classes.info}>
                   <p className={classes.section}>Teaching Assistant:</p>
                   <ul>

@@ -56,12 +56,14 @@ const styles = theme => ({
     border: "1px solid black"
   },
   leftPanel: {
-    flex: 4,
+    flex: 4,  
     backgroundColor: "black",
     zIndex: 0
   },
   rightPanel: {
     flex: 6,
+    position: "relative",
+    'overflow-y': "scroll"
   },
   row: {
     display: "flex",

@@ -33,11 +33,11 @@ export const constants = {
       title: "CV",
       url: "/resources/JoshuaAndersonCV.pdf"
     },
-    {
-      id: "kE28xSEsUo5pjgUl",
-      title: "Contact",
-      url: "/contact"
-    },
+    // {
+    //   id: "kE28xSEsUo5pjgUl",
+    //   title: "Contact",
+    //   url: "/contact"
+    // },
   ],
   CONTACT: [
     {
@@ -174,15 +174,17 @@ export const constants = {
       }
     ]
   },  
-  PUBLICATIONS: {
-    THESES: [
-      {
-        cite: (<p>J.W. Anderson, "<i>CausalModels</i>: An R Library for Estimating Causal Effects,"
-         M. S. thesis, Chapman University, Orange, CA, 2022. 
-         <a href={"https://doi.org/10.36837/chapman.000379"}> https://doi.org/10.36837/chapman.000379</a></p>)
-      },
-    ]
-  },
+  PUBLICATIONS: [
+    {
+      cite: (<p>Anderson, J. W., Iñaki Alberro Encina, L., Karippacheril, T. G., Hersh, J., & Stringer, C. (2022). 
+        A Topic Modeling Approach to Classifying Open Street Map Health Clinics and Schools in Sub-Saharan Africa. <i>arXiv e-prints, arXiv-2212.</i></p>)
+    },
+    {
+      cite: (<p>Anderson, J.W. (2022) "<i>CausalModels</i>: An R Library for Estimating Causal Effects,"
+        M. S. thesis, Chapman University, Orange, CA.  
+        <a href={"https://doi.org/10.36837/chapman.000379"}> https://doi.org/10.36837/chapman.000379</a></p>)
+    },
+    ],
   TEACHING: {
     TA: [
       {

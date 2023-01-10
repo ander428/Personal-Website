@@ -27,7 +27,7 @@ const styles = theme => ({
     zIndex: -2
   },
   info: {
-    paddingTop: "15vh", 
+    paddingTop: "5vh", 
     paddingLeft: "5%",
     paddingRight: "5%",
     height: "85vh",

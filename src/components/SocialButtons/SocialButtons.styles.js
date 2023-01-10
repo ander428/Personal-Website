@@ -3,11 +3,11 @@ import { createUseStyles } from 'react-jss'
 
 const useStyles = createUseStyles({
     icon: {
-        color: 'grey',
+        color: 'lightgray',
         padding: "1%",
         height: '100%',
         "&:hover": {
-            color: 'black'
+            color: 'gray'
         }
     }
 });

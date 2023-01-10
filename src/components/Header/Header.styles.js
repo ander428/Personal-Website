@@ -10,10 +10,12 @@ const useStyles = createUseStyles({
         webkitFilter: "grayscale(80%)",
         filter: "grayscale(80%)",
         opacity: "50%",
-        position: "relative",
-        left: 0,
+        position: "absolute",
+        left: 0
     },
     header: {
+        fontSize: "6vw",
+        width: "100%",
         height: "100%",
         boxShadow: "inset 0 -0.1em 0.5em rgba(0, 0, 0, 0.5), inset 0 0.2em 0.2em rgba(0, 0, 0, 0.2)"
     },
@@ -39,16 +41,21 @@ const useStyles = createUseStyles({
         fontFamily: "Darlington"
     },
     name: {
-    fontSize: 120, 
-    paddingLeft: "12%",
     fontFamily: "Darlington", 
-    position: "absolute", 
-    left: 0, 
-    top: "40%",
     color: "lightgray",
-    // overflow: "hidden",
-    opacity: "100% !important"
-  },
+    opacity: "100% !important",
+    position: "absolute",
+    left: "50%",
+    top: "50%",
+    transform: "translate(-50%, -50%)"
+    },
+    buttons: {
+        zIndex: 4,
+        position: "absolute",
+        left: "5%",
+        bottom: "2.5%",
+        scale: "33%",
+    }
 });
 
 export default useStyles;

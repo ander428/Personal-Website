@@ -5,6 +5,7 @@ import { withStyles } from "@material-ui/core";
 import styles from "./PortfolioPage.styles.js";
 import Header from "../../components/Header/Header";
 import SocialButtons from "../../components/SocialButtons/SocialButtons";
+import NavTabs from "../../components/Header/NavTabs/NavTabs";
 
 const PortfolioPage = props => {
   const { classes } = props;
@@ -23,6 +24,7 @@ const PortfolioPage = props => {
                   reference={ref} />
               </div>            
               <div className={classes.rightPanel}>
+                <NavTabs tabValue={props.tabValue}/>
                 <div className={classes.info}>
                   <div className={classes.gallery}>
                     <Gallery data={constants.PORTFOLIO.HIGHLIGHTS} />
@@ -35,7 +37,6 @@ const PortfolioPage = props => {
                   </div>  
                 </div>
                 <p style={{margin: 0}}>Hover and click to learn more!</p>
-                <SocialButtons />
               </div> 
           </div>
       </div>

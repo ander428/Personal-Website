@@ -3,6 +3,8 @@ import styles from "./HomePage.styles.js";
 import { withStyles } from "@material-ui/core";
 import Header from "../../components/Header/Header";
 import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
+import NavTabs from "../../components/Header/NavTabs/NavTabs.js";
+
 
 const HomePage = props => {
   const { classes } = props;
@@ -36,21 +38,21 @@ const HomePage = props => {
                     src={"/imgs/background_image.jpg"} 
                     tabValue={0} 
                     title={
-                    <div style={{position: "relative", top: "-20vh"}}>
+                    <div>
                       <p>Joshua</p>
                       <p>Wolff</p>
                       <p>Anderson</p>
                     </div>}
                     reference={ref} />
-              </div>            
-              <div className={classes.rightPanel}>
+              </div>      
+              <div className={classes.rightPanel}>      
+                  <NavTabs tabValue={props.tabValue}/>
                   <div className={classes.info}>
                     <img src={"/imgs/grad.jpg"} alt={""} className={classes.profile}/>
                     <div style={{width: '50%', margin: 'auto'}}>
                       {description}
                     </div>
                   </div>
-                <SocialButtons />
               </div> 
           </div>
       </div>

@@ -4,6 +4,7 @@ import { withStyles } from "@material-ui/core";
 import styles from "./PublicationsPage.styles.js";
 import Header from "../../components/Header/Header";
 import SocialButtons from "../../components/SocialButtons/SocialButtons";
+import NavTabs from "../../components/Header/NavTabs/NavTabs";
 
 const PublicationsPage = props => {
   const { classes } = props;
@@ -22,15 +23,15 @@ const PublicationsPage = props => {
                   reference={ref} />
               </div>        
               <div className={classes.rightPanel}>
+                <NavTabs tabValue={props.tabValue}/>
                 <div className={classes.info}>
-                  <p className={classes.section}>M.S. Thesis:</p>
+                  <p className={classes.section}>Publications:</p>
                   <ul>
-                    {constants.PUBLICATIONS.THESES.map((item, i) => (
+                    {constants.PUBLICATIONS.map((item, i) => (
                       <li>{item.cite}</li>
                     ))}                  
                   </ul>
                 </div>
-                <SocialButtons />
               </div>     
           </div>
       </div>

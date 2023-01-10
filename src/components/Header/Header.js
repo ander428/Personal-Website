@@ -15,6 +15,7 @@ import {
 import MenuIcon from '@material-ui/icons/Menu';
 import { colors } from "../../utils/Themes/values";
 import { constants } from "../../utils/constants";
+import SocialButtons from '../SocialButtons/SocialButtons';
 
 const Header = props => {
     const classes = useStyles();
@@ -80,11 +81,15 @@ const Header = props => {
             )
             :  (
             <div className={classes.header}>
-                <div className={classes.name}>
-                    {props.title}
-                </div>
-                <img src={props.src} alt="" className={classes.background} />
-                <NavTabs tabValue={props.tabValue}/>
+                <div style={{position: 'relative', height: "100vh"}}>
+                    <img src={props.src} alt="" className={classes.background} />
+                    <div className={classes.name} style={{fontSize: "100%"}}>
+                        {props.title}
+                    </div>
+                    <div className={classes.buttons}>
+                        <SocialButtons />
+                    </div>
+                </div>  
             </div>)
     );
 }

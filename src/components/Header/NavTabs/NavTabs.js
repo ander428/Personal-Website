@@ -54,32 +54,33 @@ const NavTabs = props => {
     };
 
     return (
-        <div className={classes.background}>
-            <StyledTabs
-                variant="fullWidth"
-                value={value}
-                onChange={handleChange}
-                classes={{
-                    root: classes.root,
-                    scroller: classes.scroller,
-                    flexContainer: classes.flex,
-                    indicator: classes.indicator
-                }}
-                textColor={"primary"}
-                centered>
-                {constants.MENU.map(tab => (
-                    <LinkTab
-                        className={classes.tab}
-                        key={tab.id}
-                        label={<span className={classes.label}>{tab.title}</span>}
-                        href={(tab.title === "CV" ? "" : "/#") +
-                        tab.url}
-                        {...a11yProps(tab.id)}
+            <div className={classes.background}>
+                <StyledTabs
+                    variant="fullWidth"
+                    value={value}
+                    onChange={handleChange}
+                    classes={{
+                        root: classes.root,
+                        scroller: classes.scroller,
+                        flexContainer: classes.flex,
+                        indicator: classes.indicator
+                    }}
+                    textColor={"primary"}
+                    centered>
+                    {constants.MENU.map(tab => (
+                        <LinkTab
+                            className={classes.tab}
+                            key={tab.id}
+                            // variant="fullWidth"
+                            label={<span className={classes.label}>{tab.title}</span>}
+                            href={(tab.title === "CV" ? "" : "/#") +
+                            tab.url}
+                            {...a11yProps(tab.id)}
 
-                    />
-                ))}
-            </StyledTabs>
-        </div>
+                        />
+                    ))}
+                </StyledTabs>
+            </div>
     );
 };
 
