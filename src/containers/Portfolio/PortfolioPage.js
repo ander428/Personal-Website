@@ -4,7 +4,6 @@ import { constants } from "../../utils/constants";
 import { withStyles } from "@material-ui/core";
 import styles from "./PortfolioPage.styles.js";
 import Header from "../../components/Header/Header";
-import SocialButtons from "../../components/SocialButtons/SocialButtons";
 import NavTabs from "../../components/Header/NavTabs/NavTabs";
 
 const PortfolioPage = props => {

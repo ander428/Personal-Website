@@ -1,6 +1,5 @@
 import React from 'react';
 import useStyles from "./Header.styles";
-import NavTabs from './NavTabs/NavTabs';
 import { isMobile } from "react-device-detect";
 import { 
     CssBaseline, 

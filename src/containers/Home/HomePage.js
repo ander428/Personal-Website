@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./HomePage.styles.js";
 import { withStyles } from "@material-ui/core";
 import Header from "../../components/Header/Header";
-import SocialButtons from "../../components/SocialButtons/SocialButtons.js";
 import NavTabs from "../../components/Header/NavTabs/NavTabs.js";
 
 
