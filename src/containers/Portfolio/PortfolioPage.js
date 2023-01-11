@@ -8,6 +8,7 @@ import NavTabs from "../../components/Header/NavTabs/NavTabs";
 
 const PortfolioPage = props => {
   const { classes } = props;
+  const tabValue = 1;
 
   const ref = React.createRef();
 
@@ -23,7 +24,7 @@ const PortfolioPage = props => {
                   reference={ref} />
               </div>            
               <div className={classes.rightPanel}>
-                <NavTabs tabValue={props.tabValue}/>
+                <NavTabs tabValue={tabValue}/>
                 <div className={classes.info}>
                   <div className={classes.gallery}>
                     <Gallery data={constants.PORTFOLIO.HIGHLIGHTS} />

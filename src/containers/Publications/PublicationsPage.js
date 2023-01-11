@@ -7,6 +7,7 @@ import NavTabs from "../../components/Header/NavTabs/NavTabs";
 
 const PublicationsPage = props => {
   const { classes } = props;
+  const tabValue = 2;
 
   const ref = React.createRef();
 
@@ -22,7 +23,7 @@ const PublicationsPage = props => {
                   reference={ref} />
               </div>        
               <div className={classes.rightPanel}>
-                <NavTabs tabValue={props.tabValue}/>
+                <NavTabs tabValue={tabValue}/>
                 <div className={classes.info}>
                   <p className={classes.section}>Publications:</p>
                   <ul>

@@ -9,7 +9,7 @@ const useStyles = createUseStyles({
   },
   scroller: {
     // position: "relative",
-    height: "6vh",
+    // height: "6vh",
   },
   label: {
     fontSize: "1.25vw"
@@ -17,16 +17,16 @@ const useStyles = createUseStyles({
   flex: {
     postion: "relative",
     // left: "50%"
-  }
-  // "& .indicator": {
-  // display: "flex",
-  // justifyContent: "center",
-  // backgroundColor: "transparent",
-  // "& > span": {
-  //   maxWidth: 40,
-  //   width: "100%",
-  //   backgroundColor: "green !important"
-  // }},
+  },
+  "& .indicator": {
+  display: "flex",
+  justifyContent: "center",
+  backgroundColor: "transparent",
+  "& > span": {
+    maxWidth: 40,
+    width: "100%",
+    backgroundColor: "green !important"
+  }},
 });
 
 export default useStyles;

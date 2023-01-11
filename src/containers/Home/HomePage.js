@@ -7,6 +7,7 @@ import NavTabs from "../../components/Header/NavTabs/NavTabs.js";
 
 const HomePage = props => {
   const { classes } = props;
+  const tabValue = 0;
 
   const ref = React.useRef();
 
@@ -45,7 +46,7 @@ const HomePage = props => {
                     reference={ref} />
               </div>      
               <div className={classes.rightPanel}>      
-                  <NavTabs tabValue={props.tabValue}/>
+                  <NavTabs tabValue={tabValue}/>
                   <div className={classes.info}>
                     <img src={"/imgs/grad.jpg"} alt={""} className={classes.profile}/>
                     <div style={{width: '50%', margin: 'auto'}}>

@@ -8,6 +8,7 @@ import NavTabs from "../../components/Header/NavTabs/NavTabs";
 
 const TeachingPage = props => {
   const { classes } = props;
+  const tabValue = 3; 
 
   const ref = React.createRef();
 
@@ -23,7 +24,7 @@ const TeachingPage = props => {
                   reference={ref} />
               </div>        
               <div className={classes.rightPanel}>
-                <NavTabs tabValue={props.tabValue}/>
+                <NavTabs tabValue={tabValue}/>
                 <div className={classes.info}>
                   <p className={classes.section}>Teaching Assistant:</p>
                   <ul>
@@ -33,8 +34,20 @@ const TeachingPage = props => {
                       </li>
                     ))}                  
                   </ul>
+                  <p className={classes.section}>Guest Leactures:</p>
+                  <ul>
+                    {constants.TEACHING.GL.map((item, i) => (
+                      <li>
+                        [{item.terms}] {item.course} @ {item.university} ({item.location})
+                        <ul>
+                          <li>
+                            {item.topic}
+                          </li>
+                        </ul>
+                      </li>
+                    ))}                  
+                  </ul>
                 </div>
-                <SocialButtons />
               </div>     
           </div>
       </div>

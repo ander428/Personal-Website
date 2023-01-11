@@ -71,7 +71,7 @@ const NavTabs = props => {
                         <LinkTab
                             className={classes.tab}
                             key={tab.id}
-                            // variant="fullWidth"
+                            variant="fullWidth"
                             label={<span className={classes.label}>{tab.title}</span>}
                             href={(tab.title === "CV" ? "" : "/#") +
                             tab.url}

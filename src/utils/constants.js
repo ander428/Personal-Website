@@ -205,6 +205,15 @@ export const constants = {
         course: "Statistical Models for Business",
         terms: "Fall 2020"
       },
+    ],
+    GL: [
+      {
+        university: "Chapman University",
+        location: "Orange, CA",
+        course: "Intro to Data Science",
+        terms: "Spring 2022",
+        topic: "Topics in Data Science: Causal Inference"
+      }
     ]
   },
   GLOBAL_VARS: {
