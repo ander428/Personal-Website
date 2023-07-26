@@ -176,6 +176,10 @@ export const constants = {
   },  
   PUBLICATIONS: [
     {
+      cite: (<p>Anderson, J. W., Rakovski, C. (2022). 
+        An R package for parametric estimation of causal effects. <i>arXiv e-prints, arXiv-2212.</i></p>)
+    },
+    {
       cite: (<p>Anderson, J. W., Iñaki Alberro Encina, L., Karippacheril, T. G., Hersh, J., & Stringer, C. (2022). 
         A Topic Modeling Approach to Classifying Open Street Map Health Clinics and Schools in Sub-Saharan Africa. <i>arXiv e-prints, arXiv-2212.</i></p>)
     },
