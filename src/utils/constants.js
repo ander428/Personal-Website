@@ -175,6 +175,9 @@ export const constants = {
     ]
   },  
   PUBLICATIONS: [
+    { 
+      cite: (Anderson, J. W., Shaikh, N., Visweswaran, S. (2023) “Measuring and Reducing Racial Bias in a Pediatric Urinary Tract Infection Model.” <i>MedRxiv</i> 2023-09.)
+    },
     {
       cite: (<p>Anderson, J. W., Rakovski, C. (2022). 
         An R package for parametric estimation of causal effects. <i>arXiv e-prints, arXiv-2212.</i></p>)
