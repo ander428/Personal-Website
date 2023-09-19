@@ -35,9 +35,9 @@ const TeachingPage = props => {
                   </ul>
                   <p className={classes.section}>Guest Leactures:</p>
                   <ul>
-                    {constants.TEACHING.GL.map((item, i) => (
+                    {constants.TEACHING.TALK.map((item, i) => (
                       <li>
-                        [{item.terms}] {item.course} @ {item.university} ({item.location})
+                        [{item.terms}] {item.event} @ {item.university} ({item.location})
                         <ul>
                           <li>
                             {item.topic}
