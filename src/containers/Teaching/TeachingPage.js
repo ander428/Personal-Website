@@ -33,7 +33,7 @@ const TeachingPage = props => {
                       </li>
                     ))}                  
                   </ul>
-                  <p className={classes.section}>Guest Leactures:</p>
+                  <p className={classes.section}>Talks / Guest Lectures:</p>
                   <ul>
                     {constants.TEACHING.TALK.map((item, i) => (
                       <li>
