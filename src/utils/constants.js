@@ -213,11 +213,18 @@ export const constants = {
         terms: "Fall 2020"
       },
     ],
-    GL: [
+    TALK: [
+      {
+        university: "University of Pittsburgh",
+        location: "Pittsburgh, PA",
+        event: "ISP Forum",
+        terms: "Spring 2023",
+        topic: "Using the SHAP Method to Produce Explanations of Predictions in Clinical Alerting Systems"
+      },
       {
         university: "Chapman University",
         location: "Orange, CA",
-        course: "Intro to Data Science",
+        event: "Intro to Data Science",
         terms: "Spring 2022",
         topic: "Topics in Data Science: Causal Inference"
       }
