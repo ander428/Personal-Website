@@ -1,6 +1,6 @@
 {
   "name": "portfolio-website",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "latest",
@@ -9,24 +9,23 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@material-ui/core": "latest",
-    "@material-ui/icons": "latest",
-    "@material-ui/styles": "latest",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
     "@trendmicro/react-sidenav": "^0.4.5",
-    "citation-js": "^0.7.9",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
     "emailjs-com": "^2.6.3",
     "google-search-results-nodejs": "^2.1.0",
     "history": "^5.0.0",
-    "material-ui": "0.20.2",
-    "react": "^17.0.0",
+    "material-ui": "^1.0.0-beta.47",
+    "react": "^16.13.1",
     "react-device-detect": "^1.13.1",
-    "react-dom": "^17.0.0",
+    "react-dom": "^16.13.1",
     "react-jss": "^10.4.0",
     "react-metismenu": "^1.4.0",
     "react-pdf": "^4.2.0",
-    "react-rounded-image": "latest",
-    "react-scripts": "^5.0.1",
+    "react-rounded-image": "^2.0.2",
+    "react-scripts": "^2.1.8",
     "react-sidenav": "^4.0.6",
     "react-strap": "0.0.1",
     "react-svg": "^11.0.36",
@@ -51,7 +50,7 @@
   "devDependencies": {
     "debug": "^4.1.1",
     "prettier": "^1.19.1",
-    "react-router-dom": "latest"
+    "react-router-dom": "^5.2.0"
   },
   "optionalDependencies": {
     "fsevents": "*"
