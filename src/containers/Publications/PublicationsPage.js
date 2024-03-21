@@ -7,14 +7,11 @@ import NavTabs from "../../components/Header/NavTabs/NavTabs";
 import { Cite, plugins } from "@citation-js/core";
 import text from "./citation_text.js"
 require('@citation-js/plugin-csl')
-require('@citation-js/plugin-bibtex')
 
 const PublicationsPage = props => {  
   const { classes } = props;
   const tabValue = 2;
 
- 
-  
   const aRef = useRef()
   plugins.add("@citation-js/plugin-csl")
   const cite = new Cite(text)
