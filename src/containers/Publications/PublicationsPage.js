@@ -52,7 +52,7 @@ const PublicationsPage = props => {
                 <NavTabs tabValue={tabValue}/>
                 <div className={classes.info}>
                   <p className={classes.section}>Publications:</p>
-                  <div ref={aRef} id='s' />
+                  <div ref={aRef} />
                   <div>
                     <br />
                     <p className={classes.section}>Awards:</p>
