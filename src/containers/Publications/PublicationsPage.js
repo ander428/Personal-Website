@@ -5,8 +5,6 @@ import styles from "./PublicationsPage.styles.js";
 import Header from "../../components/Header/Header";
 import NavTabs from "../../components/Header/NavTabs/NavTabs";
 import { Cite, plugins } from "@citation-js/core";
-import { parseBibFile } from "bibtex";
-import bibFile from "./citations.bib";
 import text from "./citation_text.js"
 require('@citation-js/plugin-csl')
 require('@citation-js/plugin-bibtex')
@@ -22,16 +20,6 @@ const PublicationsPage = props => {
   const cite = new Cite(text)
 
   var output = cite.get({format: 'real', type: 'json', style: 'csl'})
-
-  function reverseChildren() {
-    const parent = document.getElementById('s');
-    // Shallow copy to array: get a `reverse` method.
-    const arr = Array.from(parent.childNodes);
-    // `reverse` works in place but conveniently returns the array for chaining.
-    arr.reverse();
-    // The experimental (as of 2018) `append` appends all its arguments in the order they are given. An already existing parent-child relationship (as in this case) is "overwritten", i.e. the node to append is cut from and re-inserted into the DOM.
-    parent.append(...arr);
-}
 
   useEffect(()=>{
         if(aRef==null)return

@@ -1,5 +1,3 @@
-import {parseBibFile} from 'bibtex'
-
 const contents = `
 @article{anderson2022topic,
   title={A Topic Modeling Approach to Classifying Open Street Map Health Clinics and Schools in Sub-Saharan Africa},
