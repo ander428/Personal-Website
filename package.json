@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@citation-js/plugin-bibtex": "^0.7.9",
+    "@citation-js/plugin-csl": "^0.7.9",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -12,6 +14,8 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.10.0",
     "@trendmicro/react-sidenav": "^0.4.5",
+    "bibtex": "^0.9.0",
+    "citation-js": "^0.7.9",
     "classnames": "^2.2.6",
     "clsx": "^1.1.1",
     "emailjs-com": "^2.6.3",

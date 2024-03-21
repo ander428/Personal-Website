@@ -192,6 +192,18 @@ export const constants = {
         <a href={"https://doi.org/10.36837/chapman.000379"}> https://doi.org/10.36837/chapman.000379</a></p>)
     },
     ],
+  AWARDS: [
+    {
+      paper: "Assessing Racial Bias in Clinical Prediction for Urinary Tract Infections",
+      award: "Distinguished Poster Award nomination",
+      publisher: "AMIA Annual Symposium 2023"
+    },
+    {
+      paper: "Measuring and Reducing Racial Bias in a Pediatric Urinary Tract Infection Model",
+      award: "Student Paper Award nomination",
+      publisher: "AMIA Informatics Summit 2024"
+    }
+  ],
   TEACHING: {
     TA: [
       {
