@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@citation-js/plugin-bibtex": "^0.7.9",
-    "@citation-js/plugin-csl": "^0.7.9",
+    "@citation-js/core": "^0.7.18",
+    "@citation-js/plugin-doi": "^0.7.18",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",

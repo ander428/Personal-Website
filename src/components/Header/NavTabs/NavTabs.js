@@ -73,8 +73,7 @@ const NavTabs = props => {
                             key={tab.id}
                             variant="fullWidth"
                             label={<span className={classes.label}>{tab.title}</span>}
-                            href={(tab.title === "CV" ? "" : "/#") +
-                            tab.url}
+                            href={(tab.title === "CV" ? "" : "/#") + tab.url}
                             {...a11yProps(tab.id)}
 
                         />

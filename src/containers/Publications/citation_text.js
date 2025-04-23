@@ -20,22 +20,24 @@ const contents = `
   year={2023}
 }
 
-@article{anderson2023measuring,
-  title={Measuring and Reducing Racial Bias in a Pediatric Urinary Tract Infection Model},
+@article{anderson2024measuring,
+  title={Measuring and reducing racial bias in a pediatric urinary tract infection model},
   author={Anderson, Joshua W and Shaikh, Nader and Visweswaran, Shyam},
-  journal={medRxiv},
-  pages={2023--09},
-  year={2023},
-  publisher={Cold Spring Harbor Laboratory Press}
+  journal={AMIA Summits on Translational Science Proceedings},
+  volume={2024},
+  pages={488},
+  year={2024}
 }
-
-@inproceedings{anderson2024assessing,
-  title={Assessing Racial Bias in Clinical Prediction for Urinary Tract Infections},
-  author={Anderson, Joshua W. and Shaikh, Nader and Visweswaran, Shyam},
-  booktitle={AMIA Annu Symp Proc.},
-  number={2023},
-  year={2024},
-  organization={AMIA}
+  
+@article{anderson2025algorithmic,
+  title={Algorithmic individual fairness and healthcare: a scoping review},
+  author={Anderson, Joshua W and Visweswaran, Shyam},
+  journal={JAMIA open},
+  volume={8},
+  number={1},
+  pages={ooae149},
+  year={2025},
+  publisher={Oxford University Press}
 }
 `
 

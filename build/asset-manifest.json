@@ -1,14 +1,13 @@
 {
-  "files": {
-    "main.css": "/static/css/main.0e985597.css",
-    "main.js": "/static/js/main.427db8d2.js",
-    "static/media/DarlingtonDemo.ttf": "/static/media/DarlingtonDemo.3b88d5c2d101c0f75486.ttf",
-    "index.html": "/index.html",
-    "main.0e985597.css.map": "/static/css/main.0e985597.css.map",
-    "main.427db8d2.js.map": "/static/js/main.427db8d2.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.0e985597.css",
-    "static/js/main.427db8d2.js"
-  ]
+  "main.css": "/static/css/main.bc9beed0.chunk.css",
+  "main.js": "/static/js/main.23dad689.chunk.js",
+  "main.js.map": "/static/js/main.23dad689.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.af31edf9.chunk.js": "/static/js/2.af31edf9.chunk.js",
+  "static/js/2.af31edf9.chunk.js.map": "/static/js/2.af31edf9.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.1041699072c95804841373c83cca8e91.js": "/precache-manifest.1041699072c95804841373c83cca8e91.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.bc9beed0.chunk.css.map": "/static/css/main.bc9beed0.chunk.css.map"
 }
