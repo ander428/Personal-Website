@@ -175,8 +175,12 @@ export const constants = {
     ]
   },  
   PUBLICATIONS: [
+    {
+      cite: (<p>Anderson, J. W., & Visweswaran, S. (2025). Algorithmic individual fairness and healthcare: a scoping review. <i>JAMIA open, 8<\i>(1), ooae149.<\p>)
+    },
     { 
-      cite: (<p>Anderson, J. W., Shaikh, N., Visweswaran, S. (2023) "Measuring and Reducing Racial Bias in a Pediatric Urinary Tract Infection Model." <i>MedRxiv</i> 2023-09.</p>)
+      cite: (<p>Anderson, J. W., Shaikh, N., & Visweswaran, S. (2024). Measuring and reducing racial bias in a pediatric urinary tract infection model. 
+        <i>AMIA Summits on Translational Science Proceedings<\i>, 2024, 488.</p>)
     },
     {
       cite: (<p>Anderson, J. W., Rakovski, C. (2022). 
@@ -226,6 +230,13 @@ export const constants = {
       },
     ],
     TALK: [
+      {
+        university: "Chapman University",
+        location: "Orange, CA",
+        event: "Machine Learning for Managers",
+        terms: "Spring 2025",
+        topic: "Topics in Machine Learning: Algorithmic Fairness"
+      },
       {
         university: "University of Pittsburgh",
         location: "Pittsburgh, PA",
