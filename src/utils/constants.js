@@ -254,6 +254,8 @@ export const constants = {
     ]
   },
   GLOBAL_VARS: {
-    windowSize: 1350
+    windowSize: 1350,
+    updated: "4/22/2025"
   }
+
 };
