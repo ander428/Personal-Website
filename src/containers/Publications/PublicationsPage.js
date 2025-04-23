@@ -48,7 +48,7 @@ const PublicationsPage = props => {
               <div className={classes.rightPanel}>
                 <NavTabs tabValue={tabValue}/>
                 <div className={classes.info}>
-                  <p className={classes.section}>Publications (Updated {constants.UPDATED}):</p>
+                  <p className={classes.section}>Publications (Updated {constants.GLOBAL_VARS.updated}):</p>
                   <div ref={aRef} />
                   <div>
                     <br />
