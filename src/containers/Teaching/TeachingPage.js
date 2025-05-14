@@ -28,7 +28,7 @@ const TeachingPage = props => {
                   <p className={classes.section}>Teaching Assistant:</p>
                   <ul>
                     {constants.TEACHING.TA.map((item, i) => (
-                      <li>
+                      <li key={i}>
                         [{item.terms}] {item.course} @ {item.university} ({item.location})
                       </li>
                     ))}                  
@@ -36,7 +36,7 @@ const TeachingPage = props => {
                   <p className={classes.section}>Talks / Guest Lectures:</p>
                   <ul>
                     {constants.TEACHING.TALK.map((item, i) => (
-                      <li>
+                      <li key={i}>
                         [{item.terms}] {item.event} @ {item.university} ({item.location})
                         <ul>
                           <li>

@@ -44,7 +44,7 @@ const PublicationsPage = props => {
                     <br />
                     <p className={classes.section}>Awards:</p>
                       {constants.AWARDS.map((item, i) => (
-                        <p>[{item.publisher}] <i>{item.award}</i>: {item.paper}</p>
+                        <p key={i}>[{item.publisher}] <i>{item.award}</i>: {item.paper}</p>
                       ))}                  
                   </div>
                 </div>

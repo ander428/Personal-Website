@@ -1,7 +1,7 @@
-import { createMuiTheme } from "@material-ui/core";
+import { createTheme } from "@material-ui/core";
 import { settings } from "./values";
 
-export const defaultTheme = createMuiTheme({
+export const defaultTheme = createTheme({
   radius: settings.radius,
   shadow: {
     default: settings.shadow,
@@ -19,9 +19,6 @@ export const defaultTheme = createMuiTheme({
     duration: {
       leavingScreen: settings.transitionDelay
     }
-  },
-  spacing: {
-    unit: 3
   },
   typography: {
     useNextVariants: true
