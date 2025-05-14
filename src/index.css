@@ -15,5 +15,5 @@ code {
 
 @font-face {
   font-family: 'Darlington';
-  src: url('\\fonts\\DarlingtonDemo.ttf') format('truetype');
+  src: url('/fonts/DarlingtonDemo.ttf') format('truetype');
 }
