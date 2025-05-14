@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@citation-js/core": "^0.7.18",
+    "@citation-js/plugin-bibtex": "^0.7.18",
+    "@citation-js/plugin-csl": "^0.7.18",
     "@citation-js/plugin-doi": "^0.7.18",
     "@emotion/react": "latest",
     "@emotion/styled": "latest",

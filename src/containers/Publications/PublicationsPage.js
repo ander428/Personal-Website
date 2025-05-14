@@ -20,14 +20,14 @@ const PublicationsPage = props => {
     fetch("/resources/pubs.bib")
       .then(res => res.text())
       .then(bibtex => {
-        console.log(bibtex)
         const cite = new Cite(bibtex);
         const output = cite.format("bibliography", {
           format: "html",
-          template: "apa",
+          template: "ieee",
           lang: "en-US",
           prepend: "• ",
         });
+        console.log(cite.data)
         setFormatted(output);
       })
       .catch(err => console.error("Citation parsing error:", err));
