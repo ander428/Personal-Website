@@ -1,26 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { constants } from "../../utils/constants";
 import { withStyles } from "@material-ui/core";
 import styles from "./PublicationsPage.styles.js";
 import Header from "../../components/Header/Header";
 import NavTabs from "../../components/Header/NavTabs/NavTabs";
 import { Cite } from "@citation-js/core";
-import contents from "./citation_text.js"
-import '@citation-js/plugin-bibtex'
-import '@citation-js/plugin-csl'
+import "@citation-js/plugin-bibtex";
+import "@citation-js/plugin-csl";
+
 
 
 const PublicationsPage = props => {  
   const { classes } = props;
   const tabValue = 2;
 
-  const cite = new Cite(contents)
-  const formatted = cite.format('bibliography', {
-    format: 'html',
-    template: 'apa',
-    lang: 'en-US',
-    prepend: '• '
-  })
+  const [formatted, setFormatted] = useState("");
+
+  useEffect(() => {
+    fetch("/resources/pubs.bib")
+      .then(res => res.text())
+      .then(bibtex => {
+        console.log(bibtex)
+        const cite = new Cite(bibtex);
+        const output = cite.format("bibliography", {
+          format: "html",
+          template: "apa",
+          lang: "en-US",
+          prepend: "• ",
+        });
+        setFormatted(output);
+      })
+      .catch(err => console.error("Citation parsing error:", err));
+  }, []);
 
   const ref = React.createRef();
 
