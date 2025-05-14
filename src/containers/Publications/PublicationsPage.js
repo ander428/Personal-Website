@@ -27,7 +27,6 @@ const PublicationsPage = props => {
           lang: "en-US",
           prepend: "• ",
         });
-        console.log(cite.data)
         setFormatted(output);
       })
       .catch(err => console.error("Citation parsing error:", err));
