@@ -66,7 +66,7 @@ export const constants = {
     HIGHLIGHTS: [
       {
         name: "UTICalc: Clinical Risk Prediciton Fairness",
-        image: "/imgs/portfolio/UTICalc.jpg",
+        image: "/imgs/portfolio/UTICalc.png",
         topic: "Current Research",
         dev: "Python/Jupyter Notebook",
         link: "https://github.com/shyamvis/racial-equity-in-clinical-algorithms/tree/main/UTICalc",
