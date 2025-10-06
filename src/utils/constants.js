@@ -65,6 +65,17 @@ export const constants = {
   PORTFOLIO: {
     HIGHLIGHTS: [
       {
+        name: "UTICalc: Clinical Risk Prediciton Fairness",
+        image: "/imgs/portfolio/UTICalc.jpg",
+        topic: "Current Research",
+        dev: "Python/Jupyter Notebook",
+        link: "https://github.com/shyamvis/racial-equity-in-clinical-algorithms/tree/main/UTICalc",
+        description: 
+        "Clinical predictive models that include race as a predictor have the potential to exacerbate disparities in healthcare." +
+        " Such models can be respecified to exclude race or optimized to reduce racial bias. We investigated the impact of such respecifications" +
+        " in a predictive model – UTICalc – which was designed to reduce catheterizations in young children with suspected urinary tract infections."
+      },
+      {
         name: "Master's Thesis",
         image: "/imgs/portfolio/CADS.png",
         topic: "Statistical Software",
@@ -77,7 +88,7 @@ export const constants = {
         "a 95% Wald confidence interval."
       },
       {
-        name: "COVID-19 Personal Research",
+        name: "COVID-19 Exploritory Analysis",
         image: "/imgs/portfolio/COVID-19.jpg",
         topic: "Data Science",
         dev: "Python/Jupyter Notebook",
@@ -87,18 +98,7 @@ export const constants = {
         "30 different variables were used to observe relating to the pandemic in both the US and as well as some internationally. " +
         "Technologies such as Jupyter Notebook, Github Pages, scikit-learn, and Bokeh were used. All data sources are well citeed. " +
         "Currently this project consists of descriptive analytics along with documentation."
-      },
-            {
-        name: "Stanford MSA",
-        image: "/imgs/portfolio/MSA.png",
-        topic: "Data Science",
-        dev: "R",
-        link: "https://github.com/ander428/StanfordMSA",
-        description:
-          "An in depth analysis of mass shootings in America from 1966 to 2016, final project for my undergraduate statistical models course using the Stanford_MSA_Database. This project " +
-          "uses the programming language R and implements three machine learning algorithms: ElasticNet, RandomForest, and K-Means Clustering to find significant " +
-          "factors that affect the number of victims in a given mass shooting in America."
-      },
+      }
     ],
     PERSONAL: [
       {
@@ -114,6 +114,17 @@ export const constants = {
           "my web development skills and better learn React.js"
       },
       {
+        name: "Stanford MSA",
+        image: "/imgs/portfolio/MSA.png",
+        topic: "Data Science",
+        dev: "R",
+        link: "https://github.com/ander428/StanfordMSA",
+        description:
+          "An in depth analysis of mass shootings in America from 1966 to 2016, final project for my undergraduate statistical models course using the Stanford_MSA_Database. This project " +
+          "uses the programming language R and implements three machine learning algorithms: ElasticNet, RandomForest, and K-Means Clustering to find significant " +
+          "factors that affect the number of victims in a given mass shooting in America."
+      },
+      {
         name: "APA Formatter",
         image: "/imgs/portfolio/APA.png",
         topic: "Windows Forms",
@@ -123,17 +134,6 @@ export const constants = {
           "APA Formatter is a desktop application similar to EasyBib.com that takes in information from a source and returns the bibliography " +
           "citation in the APA standard while requiring no internet connection. It is able to correctly cite eight common types of sources. I originally " +
           "started the project in C# but later created a Java version so it could be used on all platforms!"
-      },
-      {
-        name: "True Vine",
-        image: "/imgs/portfolio/truevine1.png",
-        topic: "Mobile Development",
-        dev: "Java/Android",
-        link: "https://github.com/madden-man/TrueVine-Android",
-        description:
-          "TrueVine is a mobile app designed to help members of collegiate organizations communicate! By combining the messaging functionality of " +
-          "Rocket Chat with a calendar (and Google Calendar integration), students can more effectively plan events and talk to each other about plans" +
-          " for the club as a whole. I partnered with a small team of people on this project with the goal of solving communication issues in our clubs on campus!"
       }
     ],
     SCHOOL: [
