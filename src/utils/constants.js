@@ -69,7 +69,7 @@ export const constants = {
         image: "/imgs/portfolio/UTICalc.png",
         topic: "Current Research",
         dev: "Python/Jupyter Notebook",
-        link: "https://github.com/shyamvis/racial-equity-in-clinical-algorithms/tree/main/UTICalc",
+        link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11141814/",
         description: 
         "Clinical predictive models that include race as a predictor have the potential to exacerbate disparities in healthcare." +
         " Such models can be respecified to exclude race or optimized to reduce racial bias. We investigated the impact of such respecifications" +
