@@ -44,7 +44,7 @@ const TeachingPage = props => {
                           </li>
                             {item.activity?.trim() && (
                               <li>
-                              <p>{item.activity}</p>
+                              {item.activity}
                              </li>
                             )}
                         </ul>
