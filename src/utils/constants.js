@@ -239,7 +239,7 @@ export const constants = {
       },
       {
         university: "Chapman University",
-        location: "Orange, CA",
+        location: "Online",
         event: "High Performance Computing",
         terms: "Fall 2025",
         topic: "Topics in Machine Learning: Mechanistic Interpretability"
@@ -250,13 +250,6 @@ export const constants = {
         event: "Machine Learning for Managers",
         terms: "Spring 2025",
         topic: "Topics in Machine Learning: Algorithmic Fairness"
-      },
-      {
-        university: "University of Pittsburgh",
-        location: "Pittsburgh, PA",
-        event: "ISP Forum",
-        terms: "Spring 2023",
-        topic: "Using the SHAP Method to Produce Explanations of Predictions in Clinical Alerting Systems"
       },
       {
         university: "Chapman University",
