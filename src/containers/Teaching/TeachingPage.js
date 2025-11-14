@@ -37,7 +37,7 @@ const TeachingPage = props => {
                   <ul>
                     {constants.TEACHING.TALK.map((item, i) => (
                       <li key={i}>
-                        [{item.terms}] {item.event} @ {item.university} ({item.location})
+                        [{item.terms}] {item.event} @ {item.university}
                         <ul>
                           <li>
                             {item.topic}
