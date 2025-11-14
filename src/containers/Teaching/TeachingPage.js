@@ -29,7 +29,7 @@ const TeachingPage = props => {
                   <ul>
                     {constants.TEACHING.TA.map((item, i) => (
                       <li key={i}>
-                        [{item.terms}] {item.course} @ {item.university} ({item.location})
+                        [{item.terms}] {item.course} @ {item.university}
                       </li>
                     ))}                  
                   </ul>
