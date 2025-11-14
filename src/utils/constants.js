@@ -232,7 +232,21 @@ export const constants = {
     TALK: [
       {
         university: "Chapman University",
+        location: "Online",
+        event: "Machine Learning for Managers",
+        terms: "Fall 2025",
+        topic: "Topics in Machine Learning: Algorithmic Fairness"
+      },
+      {
+        university: "Chapman University",
         location: "Orange, CA",
+        event: "High Performance Computing",
+        terms: "Fall 2025",
+        topic: "Topics in Machine Learning: Mechanistic Interpretability"
+      },
+      {
+        university: "Chapman University",
+        location: "Online",
         event: "Machine Learning for Managers",
         terms: "Spring 2025",
         topic: "Topics in Machine Learning: Algorithmic Fairness"
