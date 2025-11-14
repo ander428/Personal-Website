@@ -243,7 +243,7 @@ export const constants = {
         location: "Online",
         event: "High Performance Computing",
         terms: "Fall 2025",
-        topic: "Topics in Machine Learning: Mechanistic Interpretability"
+        topic: "Topics in Artificial Intelligence: Mechanistic Interpretability"
       },
       {
         university: "Chapman University",
