@@ -235,7 +235,8 @@ export const constants = {
         location: "Online",
         event: "Machine Learning for Managers",
         terms: "Fall 2025",
-        topic: "Topics in Machine Learning: Algorithmic Fairness"
+        topic: "Topics in Machine Learning: Algorithmic Fairness",
+        activity: "Developed ethical hiring problem Python lab activity"
       },
       {
         university: "Chapman University",
@@ -249,14 +250,16 @@ export const constants = {
         location: "Online",
         event: "Machine Learning for Managers",
         terms: "Spring 2025",
-        topic: "Topics in Machine Learning: Algorithmic Fairness"
+        topic: "Topics in Machine Learning: Algorithmic Fairness",
+        activity: "Developed R code for example business problem lab activity"
       },
       {
         university: "Chapman University",
         location: "Orange, CA",
         event: "Intro to Data Science",
         terms: "Spring 2022",
-        topic: "Topics in Data Science: Causal Inference"
+        topic: "Topics in Data Science: Causal Inference",
+        activity: "Developed example causal inference Python lab"
       }
     ]
   },
