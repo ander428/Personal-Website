@@ -42,9 +42,11 @@ const TeachingPage = props => {
                           <li>
                             {item.topic}
                           </li>
+                          <li>
                             {item.activity?.trim() && (
                               <h2>You have {unreadMessages.length} unread messages.</h2>
                             )}
+                          </li>
                         </ul>
                       </li>
                     ))}                  
