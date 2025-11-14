@@ -42,11 +42,11 @@ const TeachingPage = props => {
                           <li>
                             {item.topic}
                           </li>
-                          <li>
                             {item.activity?.trim() && (
+                              <li>
                               <p>{item.activity}</p>
+                             </li>
                             )}
-                          </li>
                         </ul>
                       </li>
                     ))}                  
